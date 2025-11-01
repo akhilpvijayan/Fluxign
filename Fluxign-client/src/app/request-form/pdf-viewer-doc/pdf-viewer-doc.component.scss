@@ -1,0 +1,21 @@
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;   /* thinner scrollbar */
+    height: 4px;  /* for horizontal scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* transparent track */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #6bc91f79; /* green thumb */
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin; /* Firefox thinner scrollbar */
+    scrollbar-color: #7f807e transparent; /* thumb + transparent track */
+  }
+  

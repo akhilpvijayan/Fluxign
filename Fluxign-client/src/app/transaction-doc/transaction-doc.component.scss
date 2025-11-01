@@ -1,0 +1,361 @@
+.status-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .status-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .status-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between icon and title */
+  }
+  
+  .status-icon {
+    font-size: 22px; /* adjust size of emoji/icon */
+    line-height: 1;
+  }
+  
+  .status-text h3 {
+    margin: 0;
+  }
+  
+  
+  /* Status-specific styles */
+  .status-success {
+    background-color: #e6f7ea;
+    border: 2px solid #28a745;
+  }
+  
+  .status-failed {
+    background-color: #fbeaea;
+    border: 2px solid #dc3545;
+  }
+  
+  .status-progress {
+    background-color: #fff7e6;
+    border: 2px solid #ffc107;
+  }
+
+  .pdf-wrapper {
+    width: 90vw;
+    max-width: 900px;
+    height: 80vh;
+    margin: 0 auto;
+    //overflow-y: auto;
+    //border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    //padding-top: 2.5rem;
+    border-bottom: 20%;
+  }
+  
+  .download-btn {
+    position: fixed;
+    top: calc(50% - 40vh);
+    left: 51%;
+    transform: translateX(450px);
+    
+    z-index: 99;
+    background-color: #00775c;
+    border: none;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; /* fully rounded */
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #7AC143;
+  }
+
+  .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 8px;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 13px;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10000;
+  }
+  
+  .tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  
+  .download-btn:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .pdf-viewer canvas {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  .pdf-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .powered-by {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    padding-bottom: 20%;
+  }
+  
+  .overlay-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+      .spinner {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #00775c;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+  
+      .pdf-scroll-container {
+        //flex: 1;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fafafa;
+        padding: 8px;
+        margin-bottom: 20px;
+        height: 800px;
+        
+      }
+      
+      .pdf-scroll-container embed {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      @media (max-width: 950px) {
+        .download-btn {
+          position: fixed;
+          top: 25px;
+          z-index: 9999;
+          background-color: #00775c;
+          border: none;
+          color: white;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background-color 0.2s ease;
+          right: 25px;
+          top: 25px;
+          left: auto;
+          transform: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .download-btn {
+          position: fixed;
+          top: 25px;
+          z-index: 9999;
+          background-color: #00775c;
+          border: none;
+          color: white;
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background-color 0.2s ease;
+          right: 25px;
+          top: 25px;
+          left: auto;
+          transform: none;
+        }
+        
+        .download-btn:hover {
+          background-color: #7AC143;
+        }
+        
+        .download-btn:hover .tooltip-text {
+          visibility: hidden;
+          opacity: 0;
+        }
+      
+        .pdf-wrapper {
+          max-width: 900px;
+          height: 80%;
+          margin: 0 auto;
+          //overflow-y: auto;
+          //border: 1px solid #ccc;
+          border-radius: 8px;
+          box-sizing: border-box;
+        }
+        
+        .pdf-viewer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 1rem 0;
+          margin-bottom: 30%;
+        }
+        
+        .pdf-viewer canvas {
+          margin-bottom: 10%;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          border-radius: 4px;
+          max-width: 100%;
+          height: 80% !important;
+      
+        }
+
+        .status-icon span {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        
+        .status-text h2 {
+          margin: 10px 0 5px;
+          font-size: 22px;
+        }
+        
+        .status-text p {
+          margin: 0;
+          font-size: 12px;
+          color: #555;
+        }
+
+        .tooltip-text {
+          visibility: hidden;
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 6px 8px;
+          position: absolute;
+          top: 120%;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s;
+          font-size: 10px;
+          pointer-events: none;
+          white-space: nowrap;
+          z-index: 10000;
+        }
+        
+        .tooltip-text::after {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          border-width: 6px;
+          border-style: solid;
+          border-color: #333 transparent transparent transparent;
+        }
+        
+        .download-btn:hover .tooltip-text {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .status-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 90%;
+          padding: 5px;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          font-family: Arial, sans-serif;
+          transition: all 0.3s ease;
+        }
+        
+      }

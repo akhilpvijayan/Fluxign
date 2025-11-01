@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  userservice:
+    build:
+      context: ./src/UserService    # Not just UserService.Api, but entire UserService folder
+      dockerfile: UserService.Api/Dockerfile
+    ports:
+      - "5001:80"
+
+  gatewayservice:
+    build:
+      context: ./src/ApiGateway/ApiGateway
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"

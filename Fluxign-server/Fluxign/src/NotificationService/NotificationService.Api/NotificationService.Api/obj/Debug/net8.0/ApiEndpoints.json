@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "NotificationService.Api.Controllers.NotificationController",
+    "Method": "SendNotificationAsync",
+    "RelativePath": "api/Notification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NotificationService.Application.DTOs.NotificationRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

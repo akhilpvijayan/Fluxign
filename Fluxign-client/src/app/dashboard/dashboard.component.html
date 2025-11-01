@@ -1,0 +1,127 @@
+<div class="min-h-screen dark:bg-[#1f1f1f] flex justify-center p-4 sm:p-6">
+  <div class="w-full max-w-6xl relative">
+<!-- Warning banner (only shown if email is not verified) -->
+<div *ngIf="user != null && !user?.isEmailVerified"
+     class="max-w-6xl mx-auto mb-4 rounded-md bg-yellow-50 dark:bg-yellow-900 border border-yellow-400 dark:border-yellow-700 text-yellow-800 dark:text-yellow-300 px-4 py-1 flex items-center space-x-3"
+     role="alert">
+
+  <!-- Icon -->
+  <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/>
+  </svg>
+
+  <!-- Text -->
+  <p class="text-sm font-medium">
+    {{ 'DASHBOARD.EMAIL_NOT_VERIFIED_WARNING' | translate }}
+  </p>
+
+  <!-- Verify now button -->
+  <button (click)="onVerifyEmail()"
+          class="ml-auto text-yellow-700 dark:text-yellow-400 underline hover:text-yellow-900 dark:hover:text-yellow-200 text-sm font-semibold focus:outline-none">
+    {{ 'DASHBOARD.VERIFY_NOW' | translate }}
+  </button>
+</div>
+
+<!-- Profile dropdown (always shown, below the warning) -->
+<div class="max-w-6xl mx-auto relative z-50">
+  <div class="flex justify-end">
+    <div class="relative" (click)="$event.stopPropagation()">
+      <div class="flex justify-end items-center gap-x-2">
+        <!-- Profile icon button -->
+        <button (click)="toggleProfileMenu()"
+                class="w-10 h-10 rounded-full overflow-hidden border-2 border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#6bc91f]"
+                aria-label="Profile menu">
+          <img [src]="user?.avatarImage ? user.avatarImage : 'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
+               alt="Profile"
+               class="w-full h-full object-cover" />
+        </button>
+      
+        <!-- User's first name -->
+        <span *ngIf="user?.firstName"
+              class="text-sm font-medium text-gray-800 dark:text-gray-200 whitespace-nowrap">
+          {{ user.firstName }}
+        </span>
+      </div>
+      
+
+      <!-- Dropdown menu -->
+      <div *ngIf="isProfileMenuOpen"
+           class="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-lg py-2">
+        <a routerLink="/profile"
+           class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+          {{ 'PROFILE_MENU.MY_PROFILE' | translate }}
+        </a>
+        <a (click)="showLogoutModal = true"
+           class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50 dark:hover:bg-red-700 dark:hover:text-white">
+          {{ 'PROFILE_MENU.LOGOUT' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Tabs -->
+    <div class="pt-12"> <!-- add top padding so tabs don't overlap profile -->
+      <div class="flex space-x-4 mb-6 relative overflow-x-auto no-scrollbar">
+        <div class="flex space-x-4 relative w-full min-w-max">
+          <!-- Documents Tab -->
+          <button #tabDocuments (click)="setActiveTab('documents')"
+            class="relative py-2 px-6 font-semibold rounded-t-md focus:outline-none transition-colors duration-300 whitespace-nowrap"
+            [ngClass]="{
+              'text-[#6bc91f] dark:text-[#6bc91f] bg-green-50 dark:bg-[#2b2a2a]': activeTab === 'documents',
+              'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800':
+                activeTab !== 'documents'
+            }">
+            {{ 'TABS.DOCUMENTS' | translate }}
+          </button>
+
+          <!-- Settings Tab -->
+          <button #tabSettings (click)="setActiveTab('settings')"
+            class="relative py-2 px-6 font-semibold rounded-t-md focus:outline-none transition-colors duration-300 flex items-center space-x-2 whitespace-nowrap"
+            [ngClass]="{
+              'text-[#6bc91f] dark:text-[#6bc91f] bg-green-50 dark:bg-[#2b2a2a]': activeTab === 'settings',
+              'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800':
+                activeTab !== 'settings'
+            }">
+            <i class="fas fa-cog text-gray-500 dark:text-gray-400"></i>
+            <span>{{ 'TABS.SETTINGS' | translate }}</span>
+          </button>
+
+          <!-- Animated underline -->
+          <span #underline
+            class="absolute bottom-0 h-1 bg-[#6bc91f] dark:bg-[#6bc91f] rounded-t-md transition-all duration-300 ease-in-out"
+            [ngStyle]="{ left: underlineLeft + 'px', width: underlineWidth + 'px' }"></span>
+        </div>
+      </div>
+
+      <!-- Tab Content -->
+      <div *ngIf="activeTab === 'documents'">
+        <app-documents-tab></app-documents-tab>
+      </div>
+
+      <!-- Settings Tab content -->
+      <div *ngIf="activeTab === 'settings'">
+        <app-settings-tab></app-settings-tab>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showLogoutModal" class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 w-96 max-w-full text-center">
+    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">{{ 'PROFILE_MENU.CONFIRM_LOGOUT_TITLE' | translate }}</h3>
+    <p class="text-sm text-gray-700 dark:text-gray-300 mb-6">{{ 'PROFILE_MENU.CONFIRM_LOGOUT_TEXT' | translate }}?</p>
+    <div class="flex justify-center gap-4">
+      <button
+        class="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded hover:bg-gray-400 dark:hover:bg-gray-600"
+        (click)="showLogoutModal = false">
+        {{ 'PROFILE_MENU.CANCEL' | translate }}
+      </button>
+      <button class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700" (click)="logout()">
+        {{ 'PROFILE_MENU.LOGOUT_BUTTON' | translate }}
+      </button>
+    </div>
+  </div>
+</div>

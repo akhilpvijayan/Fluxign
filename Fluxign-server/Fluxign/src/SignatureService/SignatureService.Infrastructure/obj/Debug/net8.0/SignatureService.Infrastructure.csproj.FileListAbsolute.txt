@@ -1,0 +1,15 @@
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\bin\Debug\net8.0\SignatureService.Infrastructure.deps.json
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\bin\Debug\net8.0\SignatureService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\bin\Debug\net8.0\SignatureService.Infrastructure.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\bin\Debug\net8.0\SignatureService.Application.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\bin\Debug\net8.0\SignatureService.Application.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.AssemblyInfo.cs
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\Signatur.C806B6EF.Up2Date
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\refint\SignatureService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\SignatureService.Infrastructure.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\SignatureService\SignatureService.Infrastructure\obj\Debug\net8.0\ref\SignatureService.Infrastructure.dll

@@ -1,0 +1,191 @@
+<div class="min-h-screen flex items-center justify-center px-4">
+  <div class="w-full max-w-4xl bg-white dark:bg-[#1f1f1f] 
+  rounded-2xl shadow-xl overflow-hidden 
+  flex flex-col md:flex-row 
+  border border-gray-300 dark:border-gray-600">
+
+    <!-- Image Section (Hidden on small screens) -->
+    <div class="hidden md:flex items-center justify-center bg-[#ecf4e3] dark:dark:bg-[#3a3a3a] p-8 w-1/2">
+      <img src="assets/images/signup.png" alt="Document signing illustration"
+        class="max-w-full h-auto object-contain" />
+    </div>
+
+    <!-- Form Section -->
+    <div class="w-full md:w-1/2 p-10 md:p-12">
+      <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">{{ 'CREATE_ACCOUNT_TITLE' | translate }}</h1>
+      <p class="text-sm text-gray-500 dark:text-gray-300 mb-6">{{ 'CREATE_ACCOUNT_SUBTITLE' | translate }}</p>
+
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate class="space-y-5">
+
+        <!-- Full Name -->
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">{{
+            'FIRST_NAME_LABEL' | translate }}</label>
+          <input id="name" type="text" formControlName="firstname" [placeholder]="'FIRST_NAME_PLACEHOLDER' | translate"
+            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-base dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+          <div *ngIf="isInvalid('firstname')" class="text-red-600 text-sm mt-1">{{ 'FIRST_NAME_ERROR' | translate }}
+          </div>
+        </div>
+
+        <div>
+          <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">{{
+            'LAST_NAME_LABEL' | translate }}</label>
+          <input id="name" type="text" formControlName="lastname" [placeholder]="'LAST_NAME_PLACEHOLDER' | translate"
+            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-base dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+          <div *ngIf="isInvalid('lastname')" class="text-red-600 text-sm mt-1">{{ 'LAST_NAME_ERROR' | translate }}</div>
+        </div>
+
+        <div>
+          <label for="userEmail" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">{{
+            'EMAIL_LABEL' | translate }}</label>
+          <div
+            class="flex items-center border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 focus-within:ring-2 focus-within:ring-green-500">
+            <div
+              class="flex items-center justify-center px-3 border-r border-gray-300 dark:border-gray-600 dark:bg-gray-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 dark:text-gray-300" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z" />
+              </svg>
+            </div>
+
+            <input id="userEmail" type="email" formControlName="userEmail" autocomplete="new-email" name="userEmail"
+              [placeholder]="'EMAIL_PLACEHOLDER' | translate"
+              class="flex-1 px-3 py-2 text-base dark:text-white bg-transparent focus:outline-none" />
+          </div>
+          <div *ngIf="isInvalid('userEmail')" class="text-red-600 text-sm mt-1">{{ 'EMAIL_ERROR' | translate }}</div>
+        </div>
+
+        <div>
+          <label for="userEmail" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">{{
+            'PHONE_LABEL' | translate }}</label>
+          <div
+            class="flex items-center border border-gray-300 dark:border-gray-700 rounded-md overflow-hidden w-full max-w-md">
+            <!-- UAE Flag + Country Code -->
+            <div
+              class="flex items-center bg-gray-100 dark:bg-gray-800 px-3 border-r border-gray-300 dark:border-gray-700 select-none">
+              <!-- UAE Flag SVG -->
+              <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="UAE Flag" class="inline-block mr-2">
+                <rect width="6" height="16" fill="#FF0000" />
+                <rect x="6" y="0" width="18" height="5.33" fill="#00732F" />
+                <rect x="6" y="5.33" width="18" height="5.34" fill="#FFFFFF" />
+                <rect x="6" y="10.67" width="18" height="5.33" fill="#000000" />
+              </svg>
+              <span class="font-semibold text-gray-700 dark:text-gray-300">+971</span>
+            </div>
+
+            <!-- Input field -->
+            <input type="tel" formControlName="userPhone" pattern="[0-9]*" (input)="onMobileInput($event)"
+              [placeholder]="'REQUEST_FORM.FORM.SIGNERS.MOBILE_PLACEHOLDER' | translate"
+              class="flex-1 px-3 py-2 bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 ring-[#6bc91f]" />
+          </div>
+          <div *ngIf="isInvalid('userPhone')" class="text-red-600 text-sm mt-1">{{ 'PHONE_ERROR' | translate }}</div>
+        </div>
+
+        <!-- Emirates ID -->
+        <div>
+          <label for="emiratesId" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">
+            {{ 'EMIRATES_ID_LABEL' | translate }}
+          </label>
+
+          <input id="emiratesId" type="text" formControlName="emiratesId" (input)="formatEmiratesId()" maxlength="18"
+            placeholder="784-1987-1234567-1"
+            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md text-base dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+
+          <div *ngIf="isInvalid('emiratesId')" class="text-red-600 text-sm mt-1">
+            {{ 'EMIRATES_ID_ERROR' | translate }}
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="relative z-20">
+          <label for="password" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">
+            {{ 'PASSWORD_LABEL' | translate }}
+          </label>
+          <div class="relative flex items-center">
+            <input id="password" [type]="showPassword ? 'text' : 'password'" formControlName="password"
+              [placeholder]="'PASSWORD_PLACEHOLDER' | translate"
+              class="w-full px-3 py-2 pr-14 border border-gray-300 dark:border-gray-600 rounded-md text-base dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+
+            <!-- Glassmorphism exclamation icon -->
+            <div class="absolute right-10 flex items-center cursor-pointer group"
+              aria-label="Password requirements tooltip" style="z-index: 9999;">
+              <div class="w-5 h-5 flex items-center justify-center rounded-full 
+               bg-white/70 dark:bg-gray-800/70 
+               backdrop-blur-sm 
+               border border-gray-300 dark:border-gray-600 
+               text-gray-800 dark:text-gray-100 
+               text-xs font-bold shadow-sm">
+                !
+              </div>
+              <div class="absolute bottom-full mb-3 left-1/2 transform -translate-x-1/2 w-64 p-3 rounded-lg 
+               bg-white dark:bg-gray-900 
+               border border-gray-300 dark:border-gray-700 
+               text-gray-900 dark:text-gray-100 
+               text-sm shadow-md opacity-0 pointer-events-none 
+               group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300"
+                style="white-space: normal; z-index: 9999;">
+                <strong>Password must include:</strong><br />
+                • 8+ characters<br />
+                • 1 uppercase letter<br />
+                • 1 lowercase letter<br />
+                • 1 number<br />
+                • 1 special character<br />
+                <div class="mt-2 italic text-gray-500 dark:text-gray-400">Example: MyP@ssw0rd!</div>
+              </div>
+            </div>
+
+            <!-- Eye icon -->
+            <button type="button" class="absolute right-2 text-gray-500 dark:text-gray-300 text-lg"
+              (click)="togglePassword()" aria-label="Toggle password visibility">
+              {{ showPassword ? '🙈' : '👁️' }}
+            </button>
+          </div>
+          <div *ngIf="signupForm.controls['password'].touched && signupForm.controls['password'].errors?.['required']" class="text-red-600 text-sm mt-1">
+            Password is required.
+          </div>
+          <div *ngIf="signupForm.controls['password'].errors?.['minlength']" class="text-red-600 text-sm mt-1">
+            Password must be at least 8 characters.
+          </div>
+          <div *ngIf="signupForm.controls['password'].errors?.['pattern']" class="text-red-600 text-sm mt-1">
+            Password must include uppercase, lowercase, number, and special character.
+          </div>          
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+          <label for="confirmPassword" class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1">
+            {{ 'CONFIRM_PASSWORD_LABEL' | translate }}
+          </label>
+          <div class="relative flex items-center">
+            <input id="confirmPassword" [type]="showConfirmPassword ? 'text' : 'password'"
+              formControlName="confirmPassword" [placeholder]="'CONFIRM_PASSWORD_PLACEHOLDER' | translate"
+              class="w-full px-3 py-2 pr-10 border border-gray-300 dark:border-gray-600 rounded-md text-base dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <button type="button" class="absolute right-2 text-gray-500 dark:text-gray-300 text-lg"
+              (click)="toggleConfirmPassword()">
+              {{ showConfirmPassword ? '🙈' : '👁️' }}
+            </button>
+          </div>
+          <div *ngIf="isInvalid('confirmPassword') || passwordMismatch" class="text-red-600 text-sm mt-1">
+            {{ passwordMismatch ? ('PASSWORD_MISMATCH_ERROR' | translate) : ('CONFIRM_PASSWORD_ERROR' | translate) }}
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" [disabled]="signupForm.invalid"
+          class="w-full bg-[#6bc91f] hover:bg-[#6ac313] text-white font-semibold py-3 px-4 rounded-lg transition disabled:bg-opacity-50 disabled:cursor-not-allowed">
+          {{ 'CREATE_ACCOUNT_BUTTON' | translate }}
+        </button>
+      </form>
+
+      <!-- Signup link -->
+      <p class="mt-8 text-sm text-center text-gray-600 dark:text-gray-400">
+        {{ 'ALREADY_HAVE_ACCOUNT' | translate }}
+        <a routerLink="/signin" class="text-green-600 dark:text-green-400 font-semibold hover:opacity-80 ml-1">
+          {{ 'SIGN_IN_LINK' | translate }}
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

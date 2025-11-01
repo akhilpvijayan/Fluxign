@@ -1,0 +1,117 @@
+[
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "GetAll",
+    "RelativePath": "api/SigningRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "CreateSigningRequestAsync",
+    "RelativePath": "api/SigningRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RequestService.Application.DTOs.SigningRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "UpdateSigningRequestAsync",
+    "RelativePath": "api/SigningRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RequestService.Application.DTOs.SigningRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "GetById",
+    "RelativePath": "api/SigningRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/SigningRequest/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "StatusFilter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameFilter",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortDescending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestService.Api.Controllers.SigningRequestController",
+    "Method": "GetRecipientByToken",
+    "RelativePath": "api/SigningRequest/token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

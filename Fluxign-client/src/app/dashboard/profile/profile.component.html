@@ -1,0 +1,368 @@
+<div class="flex justify-center">
+  <div class="w-full py-4 flex items-center space-x-2 max-w-3xl">
+    <button class="flex items-center text-[#6bc91f] hover:text-green-700 focus:outline-none" (click)="goBack()"
+      [attr.aria-label]="'PROFILE_PAGE.BACK_TO_DASHBOARD' | translate">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      <span class="font-semibold text-lg">{{ 'PROFILE_PAGE.DASHBOARD' | translate }}</span>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="isLoading"
+  class="max-w-3xl mx-auto p-6 sm:p-8 bg-white dark:bg-[#3030301e] rounded-xl shadow-lg border border-gray-300 dark:border-gray-600 min-h-[400px] animate-pulse">
+
+  <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-10">
+
+    <!-- Avatar Skeleton -->
+    <div class="relative">
+      <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+      <div
+        class="absolute bottom-1.5 right-1.5 w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 border-2 border-white dark:border-gray-700">
+      </div>
+    </div>
+
+    <!-- Info Skeleton -->
+    <div class="flex-1 space-y-4 w-full">
+
+      <!-- Name placeholder -->
+      <div class="h-6 w-1/3 rounded bg-gray-300 dark:bg-gray-700"></div>
+
+      <!-- Email section -->
+      <div class="h-4 w-1/2 rounded bg-gray-300 dark:bg-gray-700"></div>
+      <div class="h-4 w-3/4 rounded bg-gray-200 dark:bg-gray-600"></div>
+
+      <!-- Mobile section -->
+      <div class="h-4 w-1/2 rounded bg-gray-200 dark:bg-gray-600"></div>
+
+      <!-- Emirates ID -->
+      <div class="h-4 w-2/3 rounded bg-gray-300 dark:bg-gray-700"></div>
+
+      <!-- Member Since -->
+      <div class="h-4 w-1/4 rounded bg-gray-200 dark:bg-gray-600"></div>
+
+      <!-- Button placeholder -->
+      <div class="mt-4 h-8 w-24 rounded bg-gray-300 dark:bg-gray-700"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!isLoading">
+
+  <div class="max-w-3xl mx-auto mt-8 mb-4 px-4">
+    <h1 class="text-2xl font-extrabold text-gray-900 dark:text-white">{{ 'PROFILE_PAGE.TITLE' | translate }}</h1>
+  </div>
+  <div
+    class="max-w-3xl mx-auto p-6 sm:p-8 bg-white dark:bg-[#3030301e] rounded-xl shadow-lg border border-gray-300 dark:border-gray-600 min-h-[400px] flex flex-col sm:flex-row items-center gap-6 sm:gap-10 relative">
+
+    <!-- Avatar section -->
+    <div class="relative flex-shrink-0">
+      <img [src]="user?.avatarImage ? user?.avatarImage : 'https://cdn-icons-png.flaticon.com/512/149/149071.png'"
+        alt="{{ 'PROFILE_PAGE.AVATAR_ALT' | translate }}"
+        class="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-2 border-gray-400 dark:border-[#6bc91f]" />
+      <!-- Edit icon on avatar -->
+      <button [attr.aria-label]="'PROFILE_PAGE.AVATAR_EDIT_ARIA' | translate"
+        class="absolute bottom-1.5 right-1.5 bg-green-600 text-white rounded-full p-2 shadow-md hover:bg-green-700 transition"
+        (click)="triggerFileInput()" style="touch-action: manipulation;">
+        <!-- Pencil icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+        </svg>
+      </button>
+
+      <input #fileInput type="file" accept="image/*" class="hidden" (change)="onFileSelected($event)" />
+    </div>
+
+    <!-- Profile info -->
+    <div class="flex flex-col justify-center flex-1 space-y-6 sm:space-y-8 w-full">
+      <div class="flex items-center flex-wrap space-x-2">
+        <!-- View Mode -->
+        <div *ngIf="!isEditingName" class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
+          {{ user?.firstName }} {{ user?.lastName }}
+        </div>
+
+        <!-- Edit Mode -->
+        <div *ngIf="isEditingName" class="flex space-x-2 items-center">
+          <input type="text" [(ngModel)]="user.firstName"
+            class="text-base sm:text-lg border rounded px-2 py-1 w-28 sm:w-32 border-green-600 bg-gray-100 dark:bg-[#222] dark:text-white focus:outline-none focus:ring-1 focus:border-[#6bc91f]"
+            placeholder="{{ 'PROFILE_PAGE.FIRST_NAME' | translate }}" />
+
+          <input type="text" [(ngModel)]="user.lastName"
+            class="text-base sm:text-lg border rounded px-2 py-1 w-28 sm:w-32 border-green-600 bg-gray-100 dark:bg-[#222] dark:text-white focus:outline-none focus:ring-1 focus:ring-green-500"
+            placeholder="{{ 'PROFILE_PAGE.LAST_NAME' | translate }}" />
+        </div>
+
+        <!-- Edit/Save Button -->
+        <button
+          class="ml-1 text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300 focus:outline-none"
+          (click)="isEditingName ? stopEditing('Name') : toggleEditing('Name')"
+          [attr.aria-label]="'PROFILE_PAGE.NAME_EDIT_ARIA' | translate">
+          <svg *ngIf="!isEditingName" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+          </svg>
+          <svg *ngIf="isEditingName" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Info grid -->
+      <div class="flex flex-col space-y-6 w-full text-gray-700 dark:text-gray-300">
+        <!-- Email -->
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold mb-1 flex items-center space-x-2">
+              <span>{{ 'PROFILE_PAGE.EMAIL_LABEL' | translate }}</span>
+              <span *ngIf="user?.isEmailVerified; else notVerified"
+                class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {{ 'PROFILE_PAGE.EMAIL_VERIFIED' | translate }}
+              </span>
+
+              <ng-template #notVerified>
+                <div class="inline-flex items-center space-x-2">
+                  <span
+                    class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    {{ 'PROFILE_PAGE.EMAIL_NOT_VERIFIED' | translate }}
+                  </span>
+                  <button
+                    class="text-sm px-2 py-1 rounded bg-green-600 hover:bg-green-700 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-green-500"
+                    (click)="onVerifyEmail()">
+                    {{ 'PROFILE_PAGE.VERIFY_BUTTON' | translate }}
+                  </button>
+                </div>
+              </ng-template>
+            </p>
+            <p class="text-lg font-medium text-gray-900 dark:text-white break-all">{{ user?.userEmail }}</p>
+          </div>
+          <button [attr.aria-label]="'PROFILE_PAGE.EMAIL_EDIT_ARIA' | translate"
+            class="text-[#6bc91f] hover:text-green-800 dark:text-green-400 dark:hover:text-green-600 ml-2">
+            <!-- Pencil icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile -->
+        <div class="flex flex-col w-full">
+          <p class="text-sm font-semibold mb-1">{{ 'PROFILE_PAGE.MOBILE_LABEL' | translate }}</p>
+          <div [dir]="currentLang === 'ar' ? 'rtl' : 'ltr'" class="flex items-center justify-between w-full">
+            <div class="flex items-center">
+              <!-- UAE Flag -->
+              <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="UAE Flag" class="inline-block"
+                [ngClass]="{'mr-2': currentLang !== 'ar', 'ml-2': currentLang === 'ar'}">
+                <rect width="6" height="16" fill="#FF0000" />
+                <rect x="6" y="0" width="18" height="5.33" fill="#00732F" />
+                <rect x="6" y="5.33" width="18" height="5.34" fill="#FFFFFF" />
+                <rect x="6" y="10.67" width="18" height="5.33" fill="#000000" />
+              </svg>
+
+              <!-- Country code and phone -->
+              <ng-container *ngIf="!isEditingPhone; else editPhoneField">
+                <ng-container *ngIf="currentLang === 'ar'; else enNumber">
+                  <span class="font-semibold ml-2">+971</span>
+                  <span class="truncate max-w-xs" title="{{ user?.userPhone }}">{{ user?.userPhone }}</span>
+                </ng-container>
+                <ng-template #enNumber>
+                  <span class="font-semibold mr-2">+971</span>
+                  <span class="truncate max-w-xs" title="{{ user?.userPhone }}">{{ user?.userPhone }}</span>
+                </ng-template>
+              </ng-container>
+
+              <ng-template #editPhoneField>
+                <div class="flex flex-col">
+                  <input type="text" name="userPhone" [(ngModel)]="user.userPhone" #phoneInput="ngModel" required
+                    pattern="^[0-9]{9}$" maxlength="9"
+                    class="text-base border rounded px-2 py-1 w-40 border-green-600 bg-gray-100 dark:bg-[#222] dark:text-white focus:outline-none focus:ring-1 focus:ring-green-500"
+                    placeholder="{{ 'PROFILE_PAGE.MOBILE_LABEL' | translate }}" />
+
+                  <!-- ✅ Validation placed inside the same template -->
+                  <div *ngIf="phoneInput.invalid && phoneInput.touched" class="text-red-600 text-sm mt-1">
+                    <div *ngIf="phoneInput.errors?.['required']">
+                      {{ 'PHONE_ERROR' | translate }}
+                    </div>
+                    <div *ngIf="phoneInput.errors?.['pattern']">
+                      {{ 'REQUEST_FORM.FORM.SIGNERS.MOBILE_REQUIRED' | translate }}
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+
+            </div>
+
+            <!-- Edit Button on the right -->
+            <button [attr.aria-label]="'PROFILE_PAGE.MOBILE_EDIT_ARIA' | translate"
+              class="text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-600"
+              (click)="isEditingPhone ? stopEditing('Phone') : toggleEditing('Phone')">
+              <svg *ngIf="!isEditingPhone" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+              </svg>
+              <svg *ngIf="isEditingPhone && user.userPhone != null && user.userPhone.length == 9"
+                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Emirates ID -->
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-semibold mb-1">
+              {{ 'PROFILE_PAGE.EMIRATES_ID_LABEL' | translate }}
+            </p>
+
+            <!-- View or edit field based on isEditingId -->
+            <ng-container>
+              <p class="text-lg font-medium text-gray-900 dark:text-white">
+                {{ showEmiratesId ? user?.emiratesId : maskedEmiratesId }}
+              </p>
+            </ng-container>
+          </div>
+
+          <div class="flex space-x-2">
+            <!-- View button -->
+            <button (click)="openViewIdPopup()" [attr.aria-label]="'PROFILE_PAGE.VIEW_EMIRATES_ID_ARIA' | translate"
+              class="text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-600"  *ngIf="!isPasswordVerified">
+              <!-- Eye Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+              </svg>
+            </button>
+
+            <!-- Edit / Save button -->
+            <button [attr.aria-label]="'PROFILE_PAGE.EMIRATES_ID_EDIT_ARIA' | translate"
+              class="text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-600"
+              (click)="openEditEmiratesIdModal()">
+              <!-- Pencil icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Member Since (no edit) -->
+        <div>
+          <p class="text-sm font-semibold mb-1">{{ 'PROFILE_PAGE.MEMBER_SINCE_LABEL' | translate }}</p>
+          <p class="text-lg font-medium text-gray-900 dark:text-white">
+            {{ user?.createdAt | date: 'MMMM yyyy' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-password-confirmation-dialog *ngIf="showPasswordDialog" (confirm)="handlePasswordConfirm($event)"
+    (cancel)="handlePasswordCancel()">
+  </app-password-confirmation-dialog>
+
+  <app-email-verification-dialog *ngIf="showOtpDialog" (confirm)="handleOtpConfirm($event)" (cancel)="handleOtpCancel()"
+    (resend)="sendOtpToEmail()"></app-email-verification-dialog>
+</div>
+
+<!-- Edit Emirates ID Modal -->
+<div *ngIf="isEditingIdModalOpen" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
+  <div
+    class="bg-white dark:bg-[#1e1e1e] p-6 rounded-lg w-[400px] shadow-xl dark:shadow-none dark:border dark:border-gray-700">
+    <h2
+    class="flex items-center justify-center space-x-3 text-2xl font-semibold mb-6 text-gray-900 dark:text-gray-100"
+  >
+    <!-- Modern ID card icon with #6bc91f -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="#6bc91f" stroke-width="2" aria-hidden="true">
+      <rect x="2" y="6" width="20" height="12" rx="2" ry="2" />
+      <circle cx="8" cy="12" r="2" fill="#6bc91f" />
+      <rect x="12" y="9" width="6" height="1.5" rx="0.75" ry="0.75" fill="#6bc91f" />
+      <rect x="12" y="12.5" width="4" height="1.5" rx="0.75" ry="0.75" fill="#6bc91f" />
+    </svg>
+    <span>{{ 'PROFILE_PAGE.EDIT_EMIRATES_ID_TITLE' | translate }}</span>
+  </h2>  
+  
+    <!-- Old masked Emirates ID -->
+    <label
+      class="block text-sm font-semibold mb-1 text-gray-700 dark:text-gray-300"
+      >{{ 'PROFILE_PAGE.OLD_EMIRATES_ID' | translate }}</label
+    >
+    <div class="relative mb-4">
+      <input type="text" [value]="showEmiratesId ? user?.emiratesId : maskedEmiratesId" readonly
+        class="w-full border rounded px-3 py-2 bg-gray-100 dark:bg-[#2a2a2a] dark:text-white border-gray-300 dark:border-gray-600" />
+      <button type="button" *ngIf="!isPasswordVerified"
+        class="absolute right-2 top-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition" (click)="openViewIdPopup()">
+        <!-- Eye icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.458 12C3.732 7.943 7.523 5 12 5s8.268 2.943 9.542 7c-1.274 4.057-5.065 7-9.542 7s-8.268-2.943-9.542-7z" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- New Emirates ID -->
+    <label
+      for="newEidInputField"
+      class="block text-sm font-semibold mb-1 text-gray-700 dark:text-gray-300"
+      >{{ 'PROFILE_PAGE.NEW_EMIRATES_ID' | translate }}</label
+    >
+      <input
+      #newEidInputField
+      type="text"
+      [ngModel]="newEmiratesId"
+      (ngModelChange)="onEmiratesIdInput($event)"
+      (keypress)="onKeyPress($event)"
+      maxlength="18"
+      required
+      #newEidInput="ngModel"
+      autofocus
+      class="w-full border rounded px-3 py-2 mb-2 bg-gray-100 dark:bg-[#2a2a2a] dark:text-white border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#6bc91f]"
+      placeholder="{{ 'PROFILE_PAGE.EMIRATES_ID_LABEL' | translate }}"
+    />    
+    <div *ngIf="newEidInput.invalid && newEidInput.touched" class="text-red-600 text-sm mt-1">
+      <div *ngIf="newEidInput.errors?.['pattern']">
+        {{ 'PROFILE_PAGE.REQUEST_FORM.FORM.SIGNERS.EMIRATES_ID_INVALID' | translate }}
+      </div>
+      <div *ngIf="newEidInput.errors?.['required']">
+        {{ 'PROFILE_PAGE.REQUEST_FORM.FORM.SIGNERS.EMIRATES_ID_REQUIRED' | translate }}
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex justify-end mt-4 space-x-2">
+      <button (click)="closeEditEmiratesIdModal()"
+        class="px-4 py-2 text-sm text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+        {{ 'CANCEL' | translate }}
+      </button>
+      <button
+        class="px-4 py-2 bg-[#6bc91f] hover:bg-green-700 text-white rounded text-sm disabled:opacity-50 disabled:cursor-not-allowed transition"
+        [disabled]="newEidInput.invalid || newEidInput.value.length != 18" (click)="stopEditing('Eid')">
+        {{ 'SAVE' | translate }}
+      </button>
+    </div>
+  </div>
+</div>

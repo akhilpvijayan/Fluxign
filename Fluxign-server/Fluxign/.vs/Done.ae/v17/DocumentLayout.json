@@ -1,0 +1,1603 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|solutionrelative:src\\signatureservice\\signatureservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.api\\controllers\\signaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|solutionrelative:src\\signatureservice\\signatureservice.api\\controllers\\signaturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C28B3C5-AF7C-4031-A793-33C0461A4517}|src\\SignatureService\\SignatureService.Application\\SignatureService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.application\\services\\signatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C28B3C5-AF7C-4031-A793-33C0461A4517}|src\\SignatureService\\SignatureService.Application\\SignatureService.Application.csproj|solutionrelative:src\\signatureservice\\signatureservice.application\\services\\signatureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1617B440-E675-41BD-BA14-FC1E420A0A56}|src\\SignatureService\\SignatureService.Infrastructure\\SignatureService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.infrastructure\\services\\signatureserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1617B440-E675-41BD-BA14-FC1E420A0A56}|src\\SignatureService\\SignatureService.Infrastructure\\SignatureService.Infrastructure.csproj|solutionrelative:src\\signatureservice\\signatureservice.infrastructure\\services\\signatureserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4AFDE130-9545-4D4D-B07A-00D9A19C8168}|src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj|solutionrelative:src\\signatureservice\\signatureservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|solutionrelative:src\\documentservice\\documentservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C28B3C5-AF7C-4031-A793-33C0461A4517}|src\\SignatureService\\SignatureService.Application\\SignatureService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.application\\interfaces\\services\\isignatureserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C28B3C5-AF7C-4031-A793-33C0461A4517}|src\\SignatureService\\SignatureService.Application\\SignatureService.Application.csproj|solutionrelative:src\\signatureservice\\signatureservice.application\\interfaces\\services\\isignatureserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1617B440-E675-41BD-BA14-FC1E420A0A56}|src\\SignatureService\\SignatureService.Infrastructure\\SignatureService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\signatureservice\\signatureservice.infrastructure\\services\\requestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1617B440-E675-41BD-BA14-FC1E420A0A56}|src\\SignatureService\\SignatureService.Infrastructure\\SignatureService.Infrastructure.csproj|solutionrelative:src\\signatureservice\\signatureservice.infrastructure\\services\\requestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB33FA73-ABAB-4E39-A011-5B352AC52636}|src\\RequestService\\RequestService.Api\\RequestService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.api\\controllers\\signingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB33FA73-ABAB-4E39-A011-5B352AC52636}|src\\RequestService\\RequestService.Api\\RequestService.Api.csproj|solutionrelative:src\\requestservice\\requestservice.api\\controllers\\signingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.infrastructure\\services\\userserviceclient .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|solutionrelative:src\\requestservice\\requestservice.infrastructure\\services\\userserviceclient .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\viewmodels\\signingrecipientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\viewmodels\\signingrecipientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\userservice.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\userservice.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\data\\userservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\data\\userservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\userservice.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\userservice.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\interfaces\\services\\irequestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\interfaces\\services\\irequestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60ACE864-ACA7-4ABE-A450-56C91A4D8607}|src\\RequestService\\RequestService.Persistence\\RequestService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.persistence\\repositories\\signingrequestsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60ACE864-ACA7-4ABE-A450-56C91A4D8607}|src\\RequestService\\RequestService.Persistence\\RequestService.Persistence.csproj|solutionrelative:src\\requestservice\\requestservice.persistence\\repositories\\signingrequestsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|solutionrelative:src\\documentservice\\documentservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\interfaces\\services\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\interfaces\\services\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|solutionrelative:src\\documentservice\\documentservice.api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7CBCC70-AD40-4DEB-BB86-5D5EDFF471C9}|src\\DocumentService\\DocumentService.Persistence\\DocumentService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.persistence\\repositories\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7CBCC70-AD40-4DEB-BB86-5D5EDFF471C9}|src\\DocumentService\\DocumentService.Persistence\\DocumentService.Persistence.csproj|solutionrelative:src\\documentservice\\documentservice.persistence\\repositories\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A4502A1-DCCA-4401-BD22-F3BF147A863F}|src\\DocumentService\\DocumentService.Infrastructure\\DocumentService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.infrastructure\\services\\requestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A4502A1-DCCA-4401-BD22-F3BF147A863F}|src\\DocumentService\\DocumentService.Infrastructure\\DocumentService.Infrastructure.csproj|solutionrelative:src\\documentservice\\documentservice.infrastructure\\services\\requestserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.infrastructure\\services\\documentserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|solutionrelative:src\\requestservice\\requestservice.infrastructure\\services\\documentserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.infrastructure\\services\\notificationserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|solutionrelative:src\\requestservice\\requestservice.infrastructure\\services\\notificationserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.application\\services\\signingrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|solutionrelative:src\\requestservice\\requestservice.application\\services\\signingrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165FBFB-7746-4C9E-88ED-88F72BC82306}|src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.infrastructure\\notificationservice.infrastructure\\notification\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C165FBFB-7746-4C9E-88ED-88F72BC82306}|src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj|solutionrelative:src\\notificationservice\\notificationservice.infrastructure\\notificationservice.infrastructure\\notification\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.infrastructure\\notification\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\userservice.infrastructure\\notification\\service\\mailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.api\\notificationservice.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|solutionrelative:src\\notificationservice\\notificationservice.api\\notificationservice.api\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A590037-0116-4CC8-A1DA-F52FE796F275}|src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.application\\notificationservice.application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A590037-0116-4CC8-A1DA-F52FE796F275}|src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj|solutionrelative:src\\notificationservice\\notificationservice.application\\notificationservice.application\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.api\\notificationservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|solutionrelative:src\\notificationservice\\notificationservice.api\\notificationservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\apigateway\\apigateway\\configuration\\reverseproxyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\apigateway\\apigateway\\configuration\\reverseproxyconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADAD3FE-EE6A-4BA8-BE65-931B6330A0F6}|src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\NotificationService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.persistence\\notificationservice.persistence\\data\\notificationservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ADAD3FE-EE6A-4BA8-BE65-931B6330A0F6}|src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\NotificationService.Persistence.csproj|solutionrelative:src\\notificationservice\\notificationservice.persistence\\notificationservice.persistence\\data\\notificationservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.api\\notificationservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{04D936E6-8A93-49F0-996E-B0173CB6D9B6}|src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj|solutionrelative:src\\notificationservice\\notificationservice.api\\notificationservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB33FA73-ABAB-4E39-A011-5B352AC52636}|src\\RequestService\\RequestService.Api\\RequestService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB33FA73-ABAB-4E39-A011-5B352AC52636}|src\\RequestService\\RequestService.Api\\RequestService.Api.csproj|solutionrelative:src\\requestservice\\requestservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\enums\\notificationtypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|solutionrelative:src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\enums\\notificationtypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.application\\dtos\\notificationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|solutionrelative:src\\requestservice\\requestservice.application\\dtos\\notificationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A590037-0116-4CC8-A1DA-F52FE796F275}|src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.application\\notificationservice.application\\dtos\\notificationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A590037-0116-4CC8-A1DA-F52FE796F275}|src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj|solutionrelative:src\\notificationservice\\notificationservice.application\\notificationservice.application\\dtos\\notificationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\enums\\otppurposeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\enums\\otppurposeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\entities\\userotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|solutionrelative:src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\entities\\userotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\userotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\userotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AACA0536-3B43-48DA-92C3-B0DFC5750279}|src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj|solutionrelative:src\\notificationservice\\notificationservice.domain\\notificationservice.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C165FBFB-7746-4C9E-88ED-88F72BC82306}|src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.infrastructure\\notificationservice.infrastructure\\notification\\util\\notificationutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C165FBFB-7746-4C9E-88ED-88F72BC82306}|src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj|solutionrelative:src\\notificationservice\\notificationservice.infrastructure\\notificationservice.infrastructure\\notification\\util\\notificationutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.infrastructure\\userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\userservice.infrastructure\\userservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\userservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.application\\dtos\\requestdashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|solutionrelative:src\\requestservice\\requestservice.application\\dtos\\requestdashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\viewmodels\\adddocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\viewmodels\\adddocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\common\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\common\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.infrastructure\\external\\requeststatushub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|solutionrelative:src\\requestservice\\requestservice.infrastructure\\external\\requeststatushub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.infrastructure\\requestservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4E86090C-59FE-4E5F-B67C-05B47661DCE5}|src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj|solutionrelative:src\\requestservice\\requestservice.infrastructure\\requestservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60ACE864-ACA7-4ABE-A450-56C91A4D8607}|src\\RequestService\\RequestService.Persistence\\RequestService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.persistence\\data\\requestservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60ACE864-ACA7-4ABE-A450-56C91A4D8607}|src\\RequestService\\RequestService.Persistence\\RequestService.Persistence.csproj|solutionrelative:src\\requestservice\\requestservice.persistence\\data\\requestservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.application\\interfaces\\services\\iuserserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08937DA3-EF86-4CC8-9702-B4D7A2489D2C}|src\\RequestService\\RequestService.Application\\RequestService.Application.csproj|solutionrelative:src\\requestservice\\requestservice.application\\interfaces\\services\\iuserserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\apigateway\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\apigateway\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\apigateway\\apigateway\\apigateway.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\apigateway\\apigateway\\apigateway.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\apigateway\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\apigateway\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC002E1C-82D0-421D-A123-DDE8A3B2F42D}|src\\RequestService\\RequestService.Domain\\RequestService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.domain\\entities\\signatureposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC002E1C-82D0-421D-A123-DDE8A3B2F42D}|src\\RequestService\\RequestService.Domain\\RequestService.Domain.csproj|solutionrelative:src\\requestservice\\requestservice.domain\\entities\\signatureposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC002E1C-82D0-421D-A123-DDE8A3B2F42D}|src\\RequestService\\RequestService.Domain\\RequestService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\requestservice\\requestservice.domain\\enum\\signingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC002E1C-82D0-421D-A123-DDE8A3B2F42D}|src\\RequestService\\RequestService.Domain\\RequestService.Domain.csproj|solutionrelative:src\\requestservice\\requestservice.domain\\enum\\signingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.application\\interfaces\\repositories\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEE51DEE-5A67-4461-8BC4-6AAF9E5A08D4}|src\\DocumentService\\DocumentService.Application\\DocumentService.Application.csproj|solutionrelative:src\\documentservice\\documentservice.application\\interfaces\\repositories\\idocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\documentservice\\documentservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{455E29AF-4266-4DD8-A724-357248037913}|src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj|solutionrelative:src\\documentservice\\documentservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\security\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\security\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\repositories\\resetrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\repositories\\resetrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\services\\imailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.infrastructure\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13439616-F8A3-4B95-BB1C-08EB3CD28FD9}|src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj|solutionrelative:src\\userservice\\userservice.infrastructure\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\passwordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\passwordresetrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\security\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\security\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\controllers\\otpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\controllers\\otpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\repositories\\otprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\repositories\\otprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\services\\iotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\services\\iotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\migrations\\20250901110239_added_otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\migrations\\20250901110239_added_otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\repositories\\iuserotprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\repositories\\iuserotprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\migrations\\20250827055439_initialuserservicesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\migrations\\20250827055439_initialuserservicesetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.api\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D621A2A8-A527-4730-93F9-0B66B6DA5D5B}|src\\UserService\\UserService.Api\\UserService.Api.csproj|solutionrelative:src\\userservice\\userservice.api\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\apigateway\\apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{07CF82A0-7FE9-4A85-B7F3-4AB0A0CD5E81}|src\\ApiGateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\apigateway\\apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\interfaces\\repositories\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\interfaces\\repositories\\irefreshtokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\viewmodels\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\viewmodels\\resetpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\viewmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\viewmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.application\\viewmodels\\refreshtokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{433F4674-6CC7-4CA4-8F95-BA02F067E749}|src\\UserService\\UserService.Application\\UserService.Application.csproj|solutionrelative:src\\userservice\\userservice.application\\viewmodels\\refreshtokenresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.domain\\entities\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19FFAD27-FB19-4E0A-A0D2-6BC5C3E0F59D}|src\\UserService\\UserService.Domain\\UserService.Domain.csproj|solutionrelative:src\\userservice\\userservice.domain\\entities\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\userservice\\userservice.persistence\\seeddata\\seeddataextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{549A52DC-433D-46D5-8EC2-0C6D9AAB29CE}|src\\UserService\\UserService.Persistence\\UserService.Persistence.csproj|solutionrelative:src\\userservice\\userservice.persistence\\seeddata\\seeddataextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ADAD3FE-EE6A-4BA8-BE65-931B6330A0F6}|src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\NotificationService.Persistence.csproj|c:\\users\\akhil.p\\source\\done.ae\\e-kyc\\done.ae\\src\\notificationservice\\notificationservice.persistence\\notificationservice.persistence\\migrations\\20250915104308_added_notification_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ADAD3FE-EE6A-4BA8-BE65-931B6330A0F6}|src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\NotificationService.Persistence.csproj|solutionrelative:src\\notificationservice\\notificationservice.persistence\\notificationservice.persistence\\migrations\\20250915104308_added_notification_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\appsettings.json",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T13:38:07.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignatureController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\Controllers\\SignatureController.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Api\\Controllers\\SignatureController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\Controllers\\SignatureController.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Api\\Controllers\\SignatureController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:33:45.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ISignatureServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Application\\Interfaces\\Services\\ISignatureServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Application\\Interfaces\\Services\\ISignatureServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Application\\Interfaces\\Services\\ISignatureServiceClient.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Application\\Interfaces\\Services\\ISignatureServiceClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:16:41.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserServiceClient .cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\UserServiceClient .cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Infrastructure\\Services\\UserServiceClient .cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\UserServiceClient .cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Infrastructure\\Services\\UserServiceClient .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:09:53.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignatureServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Infrastructure\\Services\\SignatureServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Infrastructure\\Services\\SignatureServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Infrastructure\\Services\\SignatureServiceClient.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Infrastructure\\Services\\SignatureServiceClient.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:09:41.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RequestServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:09:20.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDYAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:35:19.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignatureService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Application\\Services\\SignatureService.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Application\\Services\\SignatureService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Application\\Services\\SignatureService.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Application\\Services\\SignatureService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:19:24.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\Program.cs",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Api\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:09:42.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\SignatureService\\SignatureService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Api\\appsettings.json",
+              "RelativeToolTip": "src\\SignatureService\\SignatureService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-18T11:06:55.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SigningRecipientDto.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\ViewModels\\SigningRecipientDto.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\ViewModels\\SigningRecipientDto.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\ViewModels\\SigningRecipientDto.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\ViewModels\\SigningRecipientDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T13:26:48.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SigningRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Api\\Controllers\\SigningRequestController.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Api\\Controllers\\SigningRequestController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Api\\Controllers\\SigningRequestController.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Api\\Controllers\\SigningRequestController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T08:45:51.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserService.Api.http",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\UserService.Api.http",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\UserService.Api.http",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\UserService.Api.http",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\UserService.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-18T11:08:33.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserServiceDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Data\\UserServiceDbContext.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Data\\UserServiceDbContext.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Data\\UserServiceDbContext.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Data\\UserServiceDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:12:44.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRequestServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IRequestServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IRequestServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IRequestServiceClient.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IRequestServiceClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:45:40.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Api\\Controllers\\DocumentController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Api\\Controllers\\DocumentController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:38:55.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\Services\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Services\\DocumentService.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\Services\\DocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:36:56.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\appsettings.json",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-09T08:04:45.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Program.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Program.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAF8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:26:11.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Mailservice.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAK4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:32:54.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RequestServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Infrastructure\\Services\\RequestServiceClient.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAEwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:29:05.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserService.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\UserService.Application.csproj",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\UserService.Application.csproj",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\UserService.Application.csproj",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\UserService.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-15T06:29:34.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DocumentServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\DocumentServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Infrastructure\\Services\\DocumentServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\DocumentServiceClient.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Infrastructure\\Services\\DocumentServiceClient.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwBQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:40:42.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IDocumentService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IDocumentService.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Services\\IDocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T11:43:16.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SigningRequestsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Repositories\\SigningRequestsRepository.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Persistence\\Repositories\\SigningRequestsRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Repositories\\SigningRequestsRepository.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Persistence\\Repositories\\SigningRequestsRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T10:35:43.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Persistence\\Repositories\\DocumentRepository.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Persistence\\Repositories\\DocumentRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Persistence\\Repositories\\DocumentRepository.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Persistence\\Repositories\\DocumentRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwDEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:31:51.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Program.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Api\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T08:29:18.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SigningRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\Services\\SigningRequestService.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Application\\Services\\SigningRequestService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\Services\\SigningRequestService.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Application\\Services\\SigningRequestService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:19:58.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NotificationServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\NotificationServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Infrastructure\\Services\\NotificationServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\Services\\NotificationServiceClient.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Infrastructure\\Services\\NotificationServiceClient.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:21:05.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\Services\\NotificationService.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\Services\\NotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T08:17:22.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Program.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:37:05.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ReverseProxyConfig.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Configuration\\ReverseProxyConfig.cs",
+              "RelativeDocumentMoniker": "src\\ApiGateway\\ApiGateway\\Configuration\\ReverseProxyConfig.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Configuration\\ReverseProxyConfig.cs",
+              "RelativeToolTip": "src\\ApiGateway\\ApiGateway\\Configuration\\ReverseProxyConfig.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAEwHIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T06:26:27.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:27:45.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Api\\appsettings.json",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-09T10:47:43.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Mailservice.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Infrastructure\\Notification\\Service\\Mailservice.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwJAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T10:20:41.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20250915104308_added_notification_table.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Migrations\\20250915104308_added_notification_table.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Migrations\\20250915104308_added_notification_table.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Migrations\\20250915104308_added_notification_table.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Migrations\\20250915104308_added_notification_table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:43:08.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NotificationTypeEnum.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Enums\\NotificationTypeEnum.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Enums\\NotificationTypeEnum.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Enums\\NotificationTypeEnum.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Enums\\NotificationTypeEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:29:03.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\appsettings.json",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-15T10:40:21.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NotificationServiceDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Data\\NotificationServiceDbContext.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Data\\NotificationServiceDbContext.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Data\\NotificationServiceDbContext.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Persistence\\NotificationService.Persistence\\Data\\NotificationServiceDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAtwCsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:48:38.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "NotificationRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\DTOs\\NotificationRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Application\\DTOs\\NotificationRequestDto.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\DTOs\\NotificationRequestDto.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Application\\DTOs\\NotificationRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:23:57.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OtpService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\OtpService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Services\\OtpService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\OtpService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Services\\OtpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:55:21.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserOtp.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\UserOtp.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\UserOtp.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\UserOtp.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\UserOtp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T07:21:45.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "NotificationRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\DTOs\\NotificationRequestDto.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\DTOs\\NotificationRequestDto.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\DTOs\\NotificationRequestDto.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\DTOs\\NotificationRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T10:29:14.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "OtpPurposeEnum.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Enums\\OtpPurposeEnum.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Enums\\OtpPurposeEnum.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Enums\\OtpPurposeEnum.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Enums\\OtpPurposeEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T11:43:23.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserOtp.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserOtp.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\UserOtp.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserOtp.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\UserOtp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:59:20.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\Notification.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:50:04.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "NotificationUtil.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Util\\NotificationUtil.cs",
+              "RelativeDocumentMoniker": "src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Util\\NotificationUtil.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Util\\NotificationUtil.cs",
+              "RelativeToolTip": "src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\Notification\\Util\\NotificationUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T06:34:53.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserService.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
+              "RelativeToolTip": "src\\UserService\\UserService.Infrastructure\\UserService.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-15T06:30:18.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UserService.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\UserService.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-15T06:30:13.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T13:01:52.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RequestDashboardDto.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\DTOs\\RequestDashboardDto.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Application\\DTOs\\RequestDashboardDto.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\DTOs\\RequestDashboardDto.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Application\\DTOs\\RequestDashboardDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAzwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T11:37:42.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AddDocument.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\ViewModels\\AddDocument.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\ViewModels\\AddDocument.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\ViewModels\\AddDocument.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\ViewModels\\AddDocument.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:31:09.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Common\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Common\\ServiceResult.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Common\\ServiceResult.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Common\\ServiceResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T11:29:00.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RequestServiceDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Data\\RequestServiceDbContext.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Persistence\\Data\\RequestServiceDbContext.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Data\\RequestServiceDbContext.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Persistence\\Data\\RequestServiceDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T11:11:39.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.102\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAwL0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-09-10T08:02:35.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RequestStatusHub.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\External\\RequestStatusHub.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Infrastructure\\External\\RequestStatusHub.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\External\\RequestStatusHub.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Infrastructure\\External\\RequestStatusHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T10:46:18.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "RequestService.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Infrastructure\\RequestService.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-11T10:49:22.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IUserServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\Interfaces\\Services\\IUserServiceClient.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Application\\Interfaces\\Services\\IUserServiceClient.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Application\\Interfaces\\Services\\IUserServiceClient.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Application\\Interfaces\\Services\\IUserServiceClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T10:35:01.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IUserService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T10:26:14.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T10:33:27.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "src\\ApiGateway\\ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Program.cs",
+              "RelativeToolTip": "src\\ApiGateway\\ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T13:45:21.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ApiGateway.http",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\ApiGateway.http",
+              "RelativeDocumentMoniker": "src\\ApiGateway\\ApiGateway\\ApiGateway.http",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\ApiGateway.http",
+              "RelativeToolTip": "src\\ApiGateway\\ApiGateway\\ApiGateway.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-08T12:14:19.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\ApiGateway\\ApiGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\appsettings.json",
+              "RelativeToolTip": "src\\ApiGateway\\ApiGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T12:14:20.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20250910110740_initial_migration.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110740_initial_migration.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwEIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T11:07:40.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20250910110920_initial_migration.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Persistence\\Migrations\\20250910110920_initial_migration.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T11:09:20.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "SignaturePosition.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Domain\\Entities\\SignaturePosition.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Domain\\Entities\\SignaturePosition.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Domain\\Entities\\SignaturePosition.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Domain\\Entities\\SignaturePosition.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T11:08:43.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "SigningStatus.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Domain\\Enum\\SigningStatus.cs",
+              "RelativeDocumentMoniker": "src\\RequestService\\RequestService.Domain\\Enum\\SigningStatus.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\RequestService\\RequestService.Domain\\Enum\\SigningStatus.cs",
+              "RelativeToolTip": "src\\RequestService\\RequestService.Domain\\Enum\\SigningStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:34:21.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "IDocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Repositories\\IDocumentRepository.cs",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Repositories\\IDocumentRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Application\\Interfaces\\Repositories\\IDocumentRepository.cs",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Application\\Interfaces\\Repositories\\IDocumentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T08:03:23.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserRole.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\UserRole.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserRole.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T07:45:03.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T11:21:39.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:18:57.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ResetRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\ResetRequestRepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Repositories\\ResetRequestRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\ResetRequestRepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Repositories\\ResetRequestRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIAwwCEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T11:22:55.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\DocumentService\\DocumentService.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\DocumentService\\DocumentService.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\DocumentService\\DocumentService.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T12:13:16.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAvwMUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T10:44:52.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Dockerfile",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Dockerfile",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-08T11:34:11.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "IMailService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IMailService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IMailService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IMailService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IMailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T10:28:07.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\Security\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Infrastructure\\Security\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Infrastructure\\Security\\PasswordHasher.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Infrastructure\\Security\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:56:45.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "IOtpService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IOtpService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IOtpService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Services\\IOtpService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Services\\IOtpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:55:42.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Security\\IAuthService.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Security\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Security\\IAuthService.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Security\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T13:52:26.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "PasswordResetRequest.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\PasswordResetRequest.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\PasswordResetRequest.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\PasswordResetRequest.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\PasswordResetRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T10:56:22.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "IPasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Security\\IPasswordHasher.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Security\\IPasswordHasher.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Security\\IPasswordHasher.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Security\\IPasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T08:51:51.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Otprepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\Otprepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Repositories\\Otprepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Repositories\\Otprepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Repositories\\Otprepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T07:56:44.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T11:10:44.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "OtpController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\OtpController.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Controllers\\OtpController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\OtpController.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Controllers\\OtpController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA9wCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T08:19:34.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T13:08:04.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20250901110239_added_otp.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Migrations\\20250901110239_added_otp.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Migrations\\20250901110239_added_otp.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Migrations\\20250901110239_added_otp.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Migrations\\20250901110239_added_otp.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB8AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T11:02:40.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "IUserOtpRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserOtpRepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserOtpRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserOtpRepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IUserOtpRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T08:01:10.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "20250827055439_InitialUserServiceSetup.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Migrations\\20250827055439_InitialUserServiceSetup.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\Migrations\\20250827055439_InitialUserServiceSetup.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\Migrations\\20250827055439_InitialUserServiceSetup.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\Migrations\\20250827055439_InitialUserServiceSetup.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:54:39.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\ApiGateway\\ApiGateway\\Dockerfile",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\ApiGateway\\ApiGateway\\Dockerfile",
+              "RelativeToolTip": "src\\ApiGateway\\ApiGateway\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-28T05:58:45.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Api\\Controllers\\HealthController.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Api\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Api\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T07:26:23.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\DTOs\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\DTOs\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\DTOs\\AuthResponseDto.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\DTOs\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T11:13:57.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "IRefreshTokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\Interfaces\\Repositories\\IRefreshTokenRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T04:50:37.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\ViewModels\\ChangePasswordRequest.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\ViewModels\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:13:54.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\ViewModels\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\ViewModels\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:14:22.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "RefreshTokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\RefreshTokenResponse.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Application\\ViewModels\\RefreshTokenResponse.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Application\\ViewModels\\RefreshTokenResponse.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Application\\ViewModels\\RefreshTokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T12:13:33.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserSession.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Domain\\Entities\\UserSession.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Domain\\Entities\\UserSession.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Domain\\Entities\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T05:09:17.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "SeedDataExtension.cs",
+              "DocumentMoniker": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\SeedData\\SeedDataExtension.cs",
+              "RelativeDocumentMoniker": "src\\UserService\\UserService.Persistence\\SeedData\\SeedDataExtension.cs",
+              "ToolTip": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\UserService\\UserService.Persistence\\SeedData\\SeedDataExtension.cs",
+              "RelativeToolTip": "src\\UserService\\UserService.Persistence\\SeedData\\SeedDataExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T06:00:07.283Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

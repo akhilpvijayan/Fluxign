@@ -1,0 +1,207 @@
+{
+    "SETTINGS": {
+        "GENERAL": "عام",
+        "APPEARANCE": "المظهر",
+        "LANGUAGE": "اللغة",
+        "DARK_MODE": "الوضع الداكن",
+        "SELECT_LANGUAGE": "اختر اللغة",
+        "GENERAL_CONTENT": "إعدادات عامة هنا.",
+        "TITLE": "إعدادات {{section}}"
+    },
+    "PROFILE_MENU": {
+        "ARIA_LABEL": "قائمة الملف الشخصي",
+        "MY_PROFILE": "ملفي الشخصي",
+        "LOGOUT": "تسجيل الخروج",
+        "CONFIRM_LOGOUT_TITLE": "تأكيد تسجيل الخروج",
+        "CONFIRM_LOGOUT_TEXT": "هل أنت متأكد أنك تريد تسجيل الخروج؟",
+        "CANCEL": "إلغاء",
+        "LOGOUT_BUTTON": "تسجيل الخروج"
+    },
+    "TABS": {
+        "DOCUMENTS": "الوثائق",
+        "SETTINGS": "الإعدادات"
+    },
+    "UPLOAD_BUTTON": {
+        "LABEL": "تحميل المستند"
+    },
+    "SEARCH": {
+        "PLACEHOLDER": "ابحث في المستندات..."
+    },
+    "STATUS_TABS": {
+        "ALL": "الكل",
+        "COMPLETED": "مكتمل",
+        "PENDING": "قيد الانتظار",
+        "DRAFT": "مسودة"
+    },
+    "TABLE_HEADERS": {
+        "CREATED_AT": "تاريخ الإنشاء",
+        "TITLE": "العنوان",
+        "RECIPIENTS": "المستلمون",
+        "STATUS": "الحالة",
+        "ACTIONS": "الإجراءات"
+    },
+    "RECIPIENT_STATUS": {
+        "SIGNED": "✔ تم التوقيع",
+        "REJECTED": "✖ مرفوض",
+        "PENDING": "قيد الانتظار"
+    },
+    "REQUEST_STATUS": {
+        "DRAFT": "مسودة",
+        "COMPLETED": "مكتمل",
+        "PENDING": "قيد الانتظار"
+    },
+    "ACTIONS": {
+        "DOWNLOAD": "تحميل",
+        "VIEW": "عرض",
+        "EDIT": "تعديل",
+        "PAGE_INFO": "الصفحة {{currentPage}} من {{totalPages}}",
+        "PREVIOUS": "السابق",
+        "NEXT": "التالي"
+    },
+    "TIMELINE_MODAL": {
+        "TITLE": "جدول التوقيع — {{title}}",
+        "STATUS": "الحالة:",
+        "SIGNED": "موقع",
+        "REJECTED": "مرفوض",
+        "PENDING": "قيد الانتظار",
+        "TIMESTAMP": "الطابع الزمني: {{timestamp}}"
+    },
+    "PDF_VIEWER": {
+        "LOADING": "جاري تحميل الملف..."
+    },
+    "NAVIGATION": {
+        "BACK_TO_DASHBOARD": "العودة إلى لوحة التحكم",
+        "DASHBOARD": "لوحة التحكم"
+    },
+    "REQUEST_FORM": {
+        "TITLE": "نموذج الطلب",
+        "FORM": {
+            "TITLE_LABEL": "العنوان",
+            "TITLE_PLACEHOLDER": "أدخل عنوان المستند",
+            "TITLE_REQUIRED": "العنوان مطلوب",
+            "SIGNERS": {
+                "UNNAMED": "موقّع بدون اسم",
+                "NAME_PLACEHOLDER": "الاسم",
+                "NAME_REQUIRED": "الاسم مطلوب",
+                "EMAIL_PLACEHOLDER": "البريد الإلكتروني",
+                "EMAIL_REQUIRED": "البريد الإلكتروني صالح مطلوب",
+                "MOBILE_PLACEHOLDER": "رقم الجوال (+1234567890)",
+                "MOBILE_REQUIRED": "رقم جوال صالح مطلوب (9 رقمًا)",
+                "DELETE_SIGNER": "حذف الموقع",
+                "DRAG_TO_REORDER": "اسحب لإعادة الترتيب",
+                "ADD_SIGNER": "إضافة موقع"
+            },
+            "REVIEW": {
+                "TITLE": "مراجعة الموقعين ومواقع التوقيع",
+                "NO_POSITION": "لم يتم تحديد موقع توقيع.",
+                "SIGNATURE_AT": "توقيع في الصفحة {{page}}, إكس: {{x}}, واي: {{y}}"
+            },
+            "STEPS": {
+                "STEP_1": "الخطوة 1 من 2",
+                "STEP_2": "الخطوة 2 من 2"
+            },
+            "BUTTONS": {
+                "CANCEL": "إلغاء",
+                "FINISH_LATER": "الإنهاء لاحقًا",
+                "NEXT": "التالي",
+                "BACK": "عودة",
+                "SEND": "إرسال"
+            }
+        }
+    },
+    "PROFILE_PAGE": {
+        "BACK_TO_DASHBOARD": "العودة إلى لوحة التحكم",
+        "DASHBOARD": "لوحة التحكم",
+        "TITLE": "ملفي الشخصي",
+        "AVATAR_ALT": "صورة المستخدم",
+        "AVATAR_EDIT_ARIA": "تعديل الصورة الشخصية",
+        "NAME_EDIT_ARIA": "تعديل الاسم",
+        "EMAIL_LABEL": "البريد الإلكتروني",
+        "EMAIL_VERIFIED": "تم التحقق",
+        "EMAIL_NOT_VERIFIED": "لم يتم التحقق",
+        "EMAIL_EDIT_ARIA": "تعديل البريد الإلكتروني",
+        "MOBILE_LABEL": "الهاتف المحمول",
+        "MOBILE_EDIT_ARIA": "تعديل رقم الهاتف",
+        "PHONE_LABEL_AR": "رقم الهاتف",
+        "PHONE_ERROR_AR": "رقم الهاتف مطلوب.",
+        "EMIRATES_ID_LABEL": "هوية الإمارات",
+        "EMIRATES_ID_EDIT_ARIA": "تعديل هوية الإمارات",
+        "MEMBER_SINCE_LABEL": "عضو منذ",
+        "NAME_PLACEHOLDER": "أدخل اسمك",
+        "VERIFY_BUTTON": "تحقق",
+        "CONFIRM_PASSWORD_TITLE": "يرجى تأكيد كلمة المرور",
+        "PASSWORD_PLACEHOLDER": "أدخل كلمة المرور",
+        "WRONG_PASSWORD": "كلمة المرور غير صحيحة",
+        "EMIRATES_ID_LABEL": "الهوية الإماراتية",
+        "EMIRATES_ID_EDIT_ARIA": "تعديل الهوية الإماراتية",
+        "ENTER_OTP_TITLE": "أدخل رمز التحقق المرسل إلى بريدك الإلكتروني",
+        "ENTER_OTP_TITLE": "أدخل رمز التحقق المكون من 6 أرقام المرسل إلى بريدك الإلكتروني",
+        "RESEND_IN": "إعادة الإرسال متاحة خلال",
+        "RESEND_OTP": "إعادة إرسال الرمز",
+        "EDIT_EMIRATES_ID_TITLE": "تعديل رقم الهوية الإماراتية",
+        "OLD_EMIRATES_ID": "رقم الهوية الإماراتية القديمة",
+        "NEW_EMIRATES_ID": "رقم الهوية الإماراتية الجديدة",
+        "EMIRATES_ID_LABEL": "رقم الهوية الإماراتية",
+        "VIEW_EMIRATES_ID_ARIA": "عرض رقم الهوية الإماراتية",
+        "EMIRATES_ID_EDIT_ARIA": "تعديل رقم الهوية الإماراتية",
+        "PHONE_ERROR": "رقم الهاتف مطلوب",
+        "REQUEST_FORM": {
+            "FORM": {
+                "SIGNERS": {
+                    "EMIRATES_ID_REQUIRED": "رقم الهوية الإماراتية مطلوب",
+                    "EMIRATES_ID_INVALID": "يجب أن يكون رقم الهوية الإماراتية 15 رقماً بالضبط",
+                    "MOBILE_REQUIRED": "يجب أن يكون رقم الهاتف المحمول 9 أرقام بالضبط"
+                }
+            }
+        }
+    },
+    "CANCEL": "إلغاء",
+    "SAVE": "حفظ",
+    "VERIFY": "تحقق",
+    "CONFIRM": "تأكيد",
+    "SIGN_IN_TITLE": "تسجيل الدخول إلى حسابك",
+    "WELCOME_BACK": "مرحبًا بعودتك، نحن سعداء بوجودك.",
+    "EMAIL_LABEL": "البريد الإلكتروني",
+    "EMAIL_INVALID": "يرجى إدخال بريد إلكتروني صالح.",
+    "EMAIL_REQUIRED": "البريد الإلكتروني مطلوب.",
+    "PASSWORD_LABEL": "كلمة المرور",
+    "PASSWORD_REQUIRED": "كلمة المرور مطلوبة.",
+    "REMEMBER_ME": "تذكرني",
+    "FORGOT_PASSWORD": "هل نسيت كلمة المرور؟",
+    "SIGN_IN_BUTTON": "تسجيل الدخول",
+    "NO_ACCOUNT": "ليس لديك حساب؟",
+    "SIGN_UP": "سجل الآن",
+    "CREATE_ACCOUNT_TITLE": "أنشئ حسابك",
+    "CREATE_ACCOUNT_SUBTITLE": "ابدأ توقيع المستندات بأمان وبشكل فوري.",
+    "FIRST_NAME_LABEL_AR": "الاسم الأول",
+    "FIRST_NAME_PLACEHOLDER_AR": "أدخل الاسم الأول",
+    "LAST_NAME_LABEL_AR": "اسم العائلة",
+    "LAST_NAME_PLACEHOLDER_AR": "أدخل اسم العائلة",
+    "FIRST_NAME_ERROR_AR": "الاسم الأول مطلوب.",
+    "LAST_NAME_ERROR_AR": "اسم العائلة مطلوب.",
+    "EMAIL_LABEL": "البريد الإلكتروني",
+    "EMAIL_PLACEHOLDER": "email@example.com",
+    "EMAIL_ERROR": "أدخل بريد إلكتروني صالح.",
+    "EMIRATES_ID_LABEL": "هوية الإمارات",
+    "EMIRATES_ID_PLACEHOLDER": "784-1987-1234567-1",
+    "EMIRATES_ID_ERROR": "يرجى إدخال هوية إماراتية صحيحة.",
+    "PASSWORD_LABEL": "كلمة المرور",
+    "PASSWORD_PLACEHOLDER": "••••••••",
+    "PASSWORD_ERROR": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",
+    "CREATE_ACCOUNT_BUTTON": "إنشاء حساب",
+    "ALREADY_HAVE_ACCOUNT": "هل لديك حساب؟",
+    "SIGN_IN_LINK": "تسجيل الدخول",
+    "CONFIRM_PASSWORD_LABEL": "تأكيد كلمة المرور",
+    "CONFIRM_PASSWORD_PLACEHOLDER": "أعد إدخال كلمة المرور",
+    "CONFIRM_PASSWORD_ERROR": "يرجى تأكيد كلمة المرور",
+    "PASSWORD_MISMATCH_ERROR": "كلمتا المرور غير متطابقتين",
+    "NAVIGATION_CONFIRM": {
+        "UNSAVED_CHANGES_CONFIRM": "هل أنت متأكد من المغادرة؟ سيتم فقدان جميع التغييرات غير المحفوظة.",
+        "YES": "نعم",
+        "CANCEL": "إلغاء"
+    },
+    "DASHBOARD": {
+        "EMAIL_NOT_VERIFIED_WARNING": "لم يتم التحقق من بريدك الإلكتروني. يرجى التحقق للوصول إلى جميع الميزات.",
+        "VERIFY_NOW": "تحقق الآن"
+    }
+}

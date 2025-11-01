@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DocumentService.Api",
+    "\\DocumentService.Api\\Controllers",
+    "\\DocumentService.Application",
+    "\\DocumentService.Domain",
+    "\\DocumentService.Infrastructure"
+  ],
+  "SelectedNode": "\\DocumentService.Api\\Controllers\\DocumentController.cs",
+  "PreviewInSolutionExplorer": false
+}

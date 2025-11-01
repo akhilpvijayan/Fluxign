@@ -1,0 +1,11 @@
+:host {
+  pointer-events: none;
+  position: fixed !important;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2147483647 !important;
+}
+
+div {
+  pointer-events: auto;
+}

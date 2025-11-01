@@ -1,0 +1,15 @@
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\bin\Release\net8.0\UserService.Application.deps.json
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\bin\Release\net8.0\UserService.Application.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\bin\Release\net8.0\UserService.Application.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\bin\Release\net8.0\UserService.Domain.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\bin\Release\net8.0\UserService.Domain.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.csproj.AssemblyReference.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.AssemblyInfoInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.AssemblyInfo.cs
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.csproj.CoreCompileInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserServ.9A0DA653.Up2Date
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\refint\UserService.Application.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\UserService.Application.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\UserService\UserService.Application\obj\Release\net8.0\ref\UserService.Application.dll

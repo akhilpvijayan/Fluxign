@@ -1,0 +1,17 @@
+@keyframes drawCross {
+    0% {
+      stroke-dasharray: 0, 80;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dasharray: 80, 0;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .animate-cross path {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: drawCross 0.6s ease forwards;
+  }
+  

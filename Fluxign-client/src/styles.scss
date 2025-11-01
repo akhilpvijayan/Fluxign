@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #00775c;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .overlay-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+  }
+  
+      .spinner {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #00775c;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0%   { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+  
+      .pdf-scroll-container {
+        //flex: 1;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fafafa;
+        padding: 8px;
+        margin-bottom: 20px;
+        height: 800px;
+        
+      }
+      
+      .pdf-scroll-container embed {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      body{
+        background-color: #f1f1f1;
+      }
+
+
+
+      /* Custom green scrollbar for the signers container */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-green-500 rounded-full border-2 border-transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6bc91f transparent; /* Tailwind green-500 */
+}

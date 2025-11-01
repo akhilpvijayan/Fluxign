@@ -1,0 +1,43 @@
+<div class="consent-container">
+
+    
+    <!-- <h1 class="consent-title">Consent for UAE Pass Authentication and Digital Signature</h1>
+  
+    <p class="consent-description">
+      To proceed with your digital identity verification, we require your consent to access your UAE Pass information and allow digital signing of the eKYC document.
+    </p> -->
+  
+    <!-- <form (ngSubmit)="onSubmit()" #consentForm="ngForm"> -->
+      <!-- <div *ngIf="isLoading" class="overlay-loader">
+        <div class="spinner"></div>
+      </div>
+      <div class="consent-checkbox">
+        <input type="checkbox" id="consent1" [(ngModel)]="consent.authorizeCommunication" name="authorizeCommunication" required />
+        <label for="consent1">I authorize done.ae to communicate with UAE Pass to retrieve my verified identity details.</label>
+      </div>
+  
+      <div class="consent-checkbox">
+        <input type="checkbox" id="consent2" [(ngModel)]="consent.consentToSign" name="consentToSign" required />
+        <label for="consent2">I consent to digitally sign the eKYC document using UAE Pass.</label>
+      </div>
+  
+      <div class="consent-checkbox">
+        <input type="checkbox" id="consent3" [(ngModel)]="consent.agreeToShare" name="agreeToShare" required />
+        <label for="consent3">I agree to share the signed eKYC document with DemoBank and retain a copy for my records.</label>
+      </div>
+   -->
+      <!-- <button class="submit-button" [disabled]="!consentForm.form.valid">Continue</button> -->
+    <!-- </form> -->
+
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+        <button class="download-button" (click)="downloadPdf()">Download</button>
+      </div>
+    <div class="pdf-scroll-container">
+      <embed [src]="pdfUrl" type="application/pdf" width="100%" height="100%" />
+    </div>
+    <br>
+    <div class="button-container">
+      <button class="submit-button" (click)="onSubmit()">Continue</button>
+    </div>    
+  </div>
+  

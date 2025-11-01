@@ -1,0 +1,252 @@
+<div
+    class="w-full h-full p-6 border border-gray-300 dark:border-gray-700 rounded-lg flex flex-col bg-white dark:bg-[#1f1f1f] ">
+    <!-- Outer container -->
+    <div class="flex flex-col h-full max-h-full">
+        <!-- Header or top content -->
+        <div class="pb-2">
+            <h2 class="text-2xl font-semibold">{{ 'REQUEST_FORM.TITLE' | translate }}</h2>
+        </div>
+
+        <!-- Scrollable content -->
+        <div class="flex-1 overflow-auto pr-2 custom-scrollbar">
+            <!-- Form content goes here -->
+            <form [formGroup]="form" (ngSubmit)="onSubmit()" class="space-y-6">
+                <div *ngIf="step === 1" class="space-y-6">
+                    <!-- Title Field -->
+                    <div class="mx-2">
+                        <label for="title" class="block text-sm font-medium mb-1">
+                            {{ 'REQUEST_FORM.FORM.TITLE_LABEL' | translate }}
+                        </label>
+
+                        <input id="title" type="text" formControlName="title"
+                            [placeholder]="'REQUEST_FORM.FORM.TITLE_PLACEHOLDER' | translate"
+                            class="w-full max-w-[calc(100%-16px)] px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400
+                         focus:outline-none focus:ring-2 focus:ring-[#6bc91f] hover:border-[#6bc91f] transition-all duration-300" />
+
+                        <div *ngIf="form.get('title')?.invalid && form.get('title')?.touched"
+                            class="text-red-600 text-sm mt-1">
+                            {{ 'REQUEST_FORM.FORM.TITLE_REQUIRED' | translate }}
+                        </div>
+                    </div>
+
+                    <!-- Signers Array -->
+
+                    <div formArrayName="signers" class="flex flex-col flex-grow overflow-hidden mx-2">
+                        <div cdkDropList (cdkDropListDropped)="drop($event)"
+                            class="space-y-4 overflow-auto custom-scrollbar"
+                            style="min-height: 200px; max-height: 100%;">
+                            <div *ngFor="let signer of signers.controls; let i = index" [formGroupName]="i" cdkDrag
+                                class="border border-gray-300 dark:border-gray-700 rounded-md max-w-[calc(100%-16px)]">
+                                <!-- Accordion Header -->
+                                <div class="flex items-center justify-between px-4 py-3 cursor-pointer select-none"
+                                    (click)="toggleAccordion(i)">
+                                    <div class="flex items-center gap-2">
+                                        <div cdkDragHandle
+                                            title="{{ 'REQUEST_FORM.FORM.SIGNERS.DRAG_TO_REORDER' | translate }}"
+                                            class="text-gray-400 hover:text-gray-600 cursor-move">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4 8h16M4 16h16" />
+                                            </svg>
+                                        </div>
+                                        <strong>{{i+1}}. {{ signer.get('name')?.value || ('REQUEST_FORM.FORM.SIGNERS.UNNAMED' |
+                                            translate) }}</strong>
+                                    </div>
+
+                                    <div class="flex items-center gap-2">
+                                        <button type="button" (click)="removeSigner(i); $event.stopPropagation();"
+                                            class="text-red-600 hover:text-red-800 focus:outline-none"
+                                            *ngIf="signers.length > 1"
+                                            [attr.title]="'REQUEST_FORM.FORM.SIGNERS.DELETE_SIGNER' | translate">
+                                            <i class="fa fa-trash-alt"></i>
+                                        </button>
+
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                class="h-4 w-4 transform transition-transform"
+                                                [class.rotate-180]="accordionOpen[i]" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Accordion Body -->
+                                <div *ngIf="accordionOpen[i]"
+                                    class="border-t border-gray-300 dark:border-gray-700 px-4 py-4 space-y-3">
+                                    <input type="text" formControlName="name"
+                                        [placeholder]="'REQUEST_FORM.FORM.SIGNERS.NAME_PLACEHOLDER' | translate"
+                                        class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 ring-[#6bc91f] " />
+                                    <div *ngIf="signer.get('name')?.invalid && signer.get('name')?.touched"
+                                        class="text-red-600 text-sm">
+                                        {{ 'REQUEST_FORM.FORM.SIGNERS.NAME_REQUIRED' | translate }}
+                                    </div>
+
+                                    <input type="email" formControlName="email"
+                                        [placeholder]="'REQUEST_FORM.FORM.SIGNERS.EMAIL_PLACEHOLDER' | translate"
+                                        class="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 ring-[#6bc91f] " />
+                                    <div *ngIf="signer.get('email')?.invalid && signer.get('email')?.touched"
+                                        class="text-red-600 text-sm">
+                                        {{ 'REQUEST_FORM.FORM.SIGNERS.EMAIL_REQUIRED' | translate }}
+                                    </div>
+
+                                    <div
+                                        class="flex items-center border border-gray-300 dark:border-gray-700 rounded-md overflow-hidden w-full max-w-md">
+                                        <!-- UAE Flag + Country Code -->
+                                        <div
+                                            class="flex items-center bg-gray-100 dark:bg-gray-800 px-3 border-r border-gray-300 dark:border-gray-700 select-none">
+                                            <!-- UAE Flag SVG -->
+                                            <svg width="24" height="16" viewBox="0 0 24 16"
+                                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UAE Flag"
+                                                class="inline-block mr-2">
+                                                <rect width="6" height="16" fill="#FF0000" />
+                                                <rect x="6" y="0" width="18" height="5.33" fill="#00732F" />
+                                                <rect x="6" y="5.33" width="18" height="5.34" fill="#FFFFFF" />
+                                                <rect x="6" y="10.67" width="18" height="5.33" fill="#000000" />
+                                            </svg>
+                                            <span class="font-semibold text-gray-700 dark:text-gray-300">+971</span>
+                                        </div>
+
+                                        <!-- Input field -->
+                                        <input type="tel" formControlName="mobile" pattern="[0-9]*"  (input)="onMobileInput($event)"
+                                            [placeholder]="'REQUEST_FORM.FORM.SIGNERS.MOBILE_PLACEHOLDER' | translate"
+                                            class="flex-1 px-3 py-2 bg-transparent text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:outline-none focus:ring-2 ring-[#6bc91f]" />
+                                    </div>
+
+                                    <!-- Validation error message -->
+                                    <div *ngIf="signer.get('mobile')?.invalid && signer.get('mobile')?.touched"
+                                        class="text-red-600 text-sm mt-1">
+                                        {{ 'REQUEST_FORM.FORM.SIGNERS.MOBILE_REQUIRED' | translate }}
+                                    </div>
+
+
+                                    <!-- <button type="button" class="text-sm text-blue-600 hover:underline mt-2">
+                                        {{ selectedSignerIndex === i ? '✅ Selected for Signature' : 'Select for
+                                        Signature' }}
+                                    </button>
+
+                                    <div *ngIf="signer.get('position')?.value as pos"
+                                        class="text-xs text-green-600 mt-1">
+                                        📍 Signature at Page {{ pos.page }}, X: {{ pos.x }}, Y: {{ pos.y }}
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add Signer Button -->
+                        <div class="overflow-visible w-full max-w-xs mx-auto mb-6">
+                            <button type="button" (click)="addSigner()"
+                                class="w-full mt-4 bg-[#6bc91f] text-white px-4 py-2 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                </svg>
+                                <span>{{ 'REQUEST_FORM.FORM.SIGNERS.ADD_SIGNER' | translate }}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Placement & Review -->
+                <div *ngIf="step === 2" class="space-y-6 px-2">
+                    <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-100">
+                        {{ 'REQUEST_FORM.FORM.REVIEW.TITLE' | translate }}
+                    </h3>
+
+                    <div *ngFor="let signer of signers.controls; let i = index" [formGroupName]="i"
+                        class="border border-gray-300 dark:border-gray-700 rounded-md p-4">
+                        <div class="flex justify-between items-center">
+                            <div class="text-base font-medium text-gray-800 dark:text-gray-100">
+                                {{ signer.get('name')?.value || 'Unnamed Signer' }}
+                            </div>
+                            <div class="text-sm text-gray-500 dark:text-gray-400 italic">
+                                {{ signer.get('email')?.value }}
+                            </div>
+                        </div>
+
+                        <div class="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                            <span *ngIf="signer.get('position')?.value as pos">
+                                <span
+                                    class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-500 text-white text-xs">
+                                    ✔
+                                </span>
+                                {{ 'REQUEST_FORM.FORM.REVIEW.SIGNATURE_AT' | translate: { page: pos.page, x: pos.x, y:
+                                pos.y } }}
+                            </span>
+                            <span *ngIf="!signer.get('position')?.value" class="text-red-500">
+                                {{ 'REQUEST_FORM.FORM.REVIEW.NO_POSITION' | translate }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Fixed bottom button block -->
+        <div
+            class="mt-auto pt-4 sticky bottom-0 bg-white dark:bg-[#1f1f1f] border-t border-gray-200 dark:border-gray-700 z-10">
+            <p *ngIf="step === 1" class="text-sm text-gray-500">{{ 'REQUEST_FORM.FORM.STEPS.STEP_1' | translate }}</p>
+            <p *ngIf="step === 2" class="text-sm text-gray-500">{{ 'REQUEST_FORM.FORM.STEPS.STEP_2' | translate }}</p>
+            <!-- Progress bar -->
+            <div class="w-full h-1 mb-4">
+                <div class="h-full bg-[#6bc91f] transition-all duration-500"
+                    [style.width]="step === 1 ? '50%' : '100%'"></div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4 px-6 pb-6 justify-between">
+                <ng-container *ngIf="step === 1">
+                    <button type="button" (click)="onCancel()"
+                        class="flex-1 bg-transparent border border-[#6bc91f] text-[#6bc91f] rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:bg-red-800 hover:border-green-800 hover:text-white flex items-center justify-center gap-2">
+                        <i class="fas fa-times-circle"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.CANCEL' | translate }}</span>
+                    </button>
+
+                    <button type="button" (click)="onSaveDraft()"
+                        class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-save"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.FINISH_LATER' | translate }}</span>
+                    </button>
+
+                    <button type="button" (click)="nextStep()"
+                        class="flex-1 bg-[#6bc91f] hover:bg-green-700 text-white rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-arrow-right"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.NEXT' | translate }}</span>
+                    </button>
+                </ng-container>
+
+                <ng-container *ngIf="step === 2">
+                    <button type="button" (click)="previousStep()"
+                        class="flex-1 bg-transparent border border-[#6bc91f] text-[#6bc91f] rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 hover:bg-red-800 hover:border-green-800 hover:text-white flex items-center justify-center gap-2">
+                        <i class="fas fa-arrow-left"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.BACK' | translate }}</span>
+                    </button>
+
+                    <button type="button" (click)="onSaveDraft()"
+                        class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-save"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.FINISH_LATER' | translate }}</span>
+                    </button>
+
+                    <button type="submit" (click)="onSubmit()"
+                        class="flex-1 bg-[#6bc91f] hover:bg-green-700 text-white rounded-md font-semibold py-3 transition-all duration-300 hover:shadow-lg hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="hidden sm:inline">{{ 'REQUEST_FORM.FORM.BUTTONS.SEND' | translate }}</span>
+                    </button>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
+<app-confirm-dialog
+  *ngIf="showConfirm"
+  [message]="confirmMessage"
+  [confirmText]="confirmYes"
+  [cancelText]="confirmNo"
+  (confirmed)="handleConfirm($event)">
+</app-confirm-dialog>

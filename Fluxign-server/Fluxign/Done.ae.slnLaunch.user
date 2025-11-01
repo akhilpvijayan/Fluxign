@@ -1,0 +1,36 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\UserService\\UserService.Api\\UserService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\ApiGateway\\ApiGateway\\ApiGateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\DocumentService\\DocumentService.Api\\DocumentService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\RequestService\\RequestService.Api\\RequestService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\NotificationService\\NotificationService.Api\\NotificationService.Api\\NotificationService.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "src\\SignatureService\\SignatureService.Api\\SignatureService.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "n7sP5bfpruQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Application\\SignatureService.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json' 11.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

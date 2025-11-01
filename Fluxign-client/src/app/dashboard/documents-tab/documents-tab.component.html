@@ -1,0 +1,299 @@
+<div class="flex justify-end mb-4">
+  <button type="button"
+    class="px-5 py-2 bg-[#6bc91f] hover:bg-green-700 text-white rounded-md font-semibold flex items-center space-x-2 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+    (click)="triggerFileInput()">
+    <i class="fas fa-upload"></i>
+    <span>{{ 'UPLOAD_BUTTON.LABEL' | translate }}</span>
+  </button>
+
+  <!-- Hidden File Input -->
+  <input type="file" accept="application/pdf" style="display: none" #fileInput (change)="handleFileUpload($event)" />
+</div>
+
+<!-- Top bar: Search, Upload, Filters -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+  <!-- Search Input -->
+  <input type="search" [formControl]="searchControl" (input)="loadDashboard()"
+  [placeholder]="'SEARCH.PLACEHOLDER' | translate"
+    class="flex-grow min-w-[220px] px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-[#3030301e] text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#6bc91f] transition w-full sm:w-auto" />
+  <!-- Hidden File Input -->
+  <input type="file" accept="application/pdf" style="display: none" #fileInput (change)="handleFileUpload($event)" />
+
+  <!-- Status Filter Tabs -->
+  <div class="flex flex-wrap gap-3">
+    <button *ngFor="let status of statusTabs" (click)="statusFilter = status; currentPage = 1; loadDashboard()"
+      class="px-4 py-2 rounded-md font-medium border flex items-center space-x-2 transition duration-300 shadow-sm whitespace-nowrap"
+      [ngClass]="{
+        'bg-[#6bc91f] text-white border-[#6bc91f]': statusFilter === status && status === 'Completed',
+        'bg-yellow-500 text-white border-yellow-500': statusFilter === status && status === 'Pending',
+        'bg-blue-600 text-white border-blue-600': statusFilter === status && status === 'Draft',
+        'bg-gray-700 text-white border-gray-700': statusFilter === status && status === 'All',
+        'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-600': statusFilter !== status
+      }">
+
+      <ng-container [ngSwitch]="status">
+        <!-- Completed SVG icon -->
+        <svg *ngSwitchCase="'Completed'" xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 stroke-current"
+          [ngClass]="{
+            'text-white': statusFilter === 'Completed',
+            'text-gray-700 dark:text-gray-300': statusFilter !== 'Completed'
+          }"
+          fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path class="checkmark" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4" />
+        </svg>
+      
+        <!-- Pending FontAwesome -->
+        <i *ngSwitchCase="'Pending'"
+           class="fas fa-clock animate-spin-slow"
+           [ngClass]="{
+             'text-white': statusFilter === 'Pending',
+             'text-gray-700 dark:text-gray-300': statusFilter !== 'Pending'
+           }"></i>
+      
+        <!-- Draft FontAwesome -->
+        <i *ngSwitchCase="'Draft'"
+           class="fa fa-pencil-alt animate-bounce-slow"
+           [ngClass]="{
+             'text-white': statusFilter === 'Draft',
+             'text-gray-700 dark:text-gray-300': statusFilter !== 'Draft'
+           }"></i>
+      
+        <!-- All FontAwesome -->
+        <i *ngSwitchCase="'All'"
+           class="fas fa-layer-group animate-pulse-slow"
+           [ngClass]="{
+             'text-white': statusFilter === 'All',
+             'text-gray-700 dark:text-gray-300': statusFilter !== 'All'
+           }"></i>
+      </ng-container>
+      
+      <span>{{ ('STATUS_TABS.' + status.toUpperCase()) | translate }}</span>
+    </button>
+  </div>
+</div>
+
+<!-- Table or Skeleton Loader -->
+<div *ngIf="isLoading; else tableContent"
+  class="bg-white dark:bg-[#3030301e] shadow rounded-md p-4 overflow-x-auto border border-gray-300 dark:border-gray-600"
+  aria-busy="true" aria-live="polite">
+  <!-- Skeleton Table Header -->
+  <ul class="grid grid-cols-5 gap-4 border-b border-gray-300 dark:border-gray-700 pb-2 mb-2 min-w-[600px]">
+    <li>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-20 animate-pulse"></div>
+    </li>
+    <li>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-28 animate-pulse"></div>
+    </li>
+    <li>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-24 animate-pulse"></div>
+    </li>
+    <li>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-20 animate-pulse"></div>
+    </li>
+    <li>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded w-16 animate-pulse"></div>
+    </li>
+  </ul>
+
+  <!-- Skeleton Table Body -->
+  <ul class="divide-y divide-gray-200 dark:divide-gray-700 min-w-[600px]">
+    <li class="grid grid-cols-5 gap-4 py-3">
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[120px]"></div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[180px]"></div>
+      <div class="flex -space-x-2">
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+      </div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      <div class="flex space-x-2">
+        <div class="h-8 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      </div>
+    </li>
+    <li class="grid grid-cols-5 gap-4 py-3">
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[120px]"></div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[180px]"></div>
+      <div class="flex -space-x-2">
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+      </div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      <div class="flex space-x-2">
+        <div class="h-8 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      </div>
+    </li>
+    <li class="grid grid-cols-5 gap-4 py-3">
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[120px]"></div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-full max-w-[180px]"></div>
+      <div class="flex -space-x-2">
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+        <div
+          class="w-8 h-8 bg-gray-300 dark:bg-gray-700 rounded-full border-2 border-white dark:border-gray-800 animate-pulse -ml-2">
+        </div>
+      </div>
+      <div class="h-4 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      <div class="flex space-x-2">
+        <div class="h-8 bg-gray-300 dark:bg-gray-700 rounded animate-pulse w-24"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<ng-template #tableContent>
+  <!-- Table -->
+  <div
+    class="bg-white dark:bg-[#3030301e] shadow rounded-md p-4 overflow-x-auto border border-gray-300 dark:border-gray-600">
+    <!-- Table Header -->
+    <ul
+      class="grid grid-cols-5 gap-4 text-gray-500 dark:text-gray-400 font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-2 min-w-[600px]">
+      <li>{{ 'TABLE_HEADERS.CREATED_AT' | translate }}</li>
+      <li>{{ 'TABLE_HEADERS.TITLE' | translate }}</li>
+      <li>{{ 'TABLE_HEADERS.RECIPIENTS' | translate }}</li>
+      <li>{{ 'TABLE_HEADERS.STATUS' | translate }}</li>
+      <li>{{ 'TABLE_HEADERS.ACTIONS' | translate }}</li>      
+    </ul>
+
+    <!-- Table Body -->
+    <ul class="divide-y divide-gray-200 dark:divide-gray-700 min-w-[600px]">
+      <li *ngFor="let req of requests"
+        class="grid grid-cols-5 gap-4 py-3 items-center hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer transition-colors duration-300">
+        <div class="text-gray-600 dark:text-gray-400 text-sm">
+          {{ req.createdAt | date: 'medium' }}
+        </div>        
+        <div class="text-gray-900 dark:text-gray-100 font-medium">{{ req.title }}</div>
+        <div class="flex -space-x-2">
+          <div *ngFor="let r of req.recipients" class="relative group" [title]="r.name">
+            <img [src]="r.avatarUrl" [alt]="r.name"
+              class="w-8 h-8 rounded-full border-2 border-white dark:border-gray-800 transition-transform duration-300 group-hover:scale-110 cursor-pointer" />
+            <!-- Tooltip -->
+            <div
+              class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-3 py-1 text-xs text-white bg-black dark:bg-gray-700 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10 pointer-events-none">
+              {{ r.name }}<br />
+              <span [ngClass]="{
+                  'text-green-400': r.signed && !r.rejected,
+                  'text-red-400': r.rejected,
+                  'text-yellow-400': !r.signed && !r.rejected
+                }">
+                <ng-container *ngIf="r.signed && !r.rejected">{{ 'RECIPIENT_STATUS.SIGNED' | translate }}</ng-container>
+                <ng-container *ngIf="r.rejected">{{ 'RECIPIENT_STATUS.REJECTED' | translate }}</ng-container>
+                <ng-container *ngIf="!r.signed && !r.rejected">{{ 'RECIPIENT_STATUS.PENDING' | translate }}</ng-container>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <span class="text-sm font-semibold flex items-center space-x-1" [ngClass]="{
+          'text-blue-600 dark:text-blue-400': req.status === 'Draft',
+          'text-yellow-500 dark:text-yellow-400': req.status === 'Pending',
+          'text-green-600 dark:text-green-400': req.status === 'Completed'
+        }">
+          <ng-container [ngSwitch]="req.status">
+            <i *ngSwitchCase="'Draft'" class="fas fa-pencil-alt animate-bounce-slow"></i>
+
+            <!-- Completed SVG icon with stroke animation -->
+            <svg *ngSwitchCase="'Completed'" xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 stroke-current text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <circle cx="12" cy="12" r="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path class="checkmark" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2l4-4" />
+            </svg>
+
+            <i *ngSwitchCase="'Pending'" class="fas fa-clock animate-spin-slow text-yellow-500"></i>
+          </ng-container>
+          <span>{{ ('REQUEST_STATUS.' + req.status.toUpperCase()) | translate }}</span>
+        </span>
+
+        <!-- Actions based on status -->
+        <div class="flex items-center space-x-2 relative flex-wrap"
+          [ngClass]="{'justify-center': req.status === 'Pending', 'justify-start': req.status !== 'Pending'}">
+          <!-- Completed -->
+          <button type="button" *ngIf="req.status === 'Completed'"
+            class="flex-shrink-0 w-[50px] sm:w-[140px] px-0 sm:px-5 py-2 bg-[#6bc91f] hover:bg-green-700 text-white rounded-md font-semibold flex items-center justify-center space-x-0 sm:space-x-2 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+            (click)="downloadDocument(req)">
+            <i class="fas fa-download text-lg sm:text-base"></i>
+            <span class="hidden sm:inline">{{ 'ACTIONS.DOWNLOAD' | translate }}</span>
+          </button>
+          <button *ngIf="req.status === 'Completed'"
+            class="p-2 text-gray-600 hover:text-green-700 rounded-md transition duration-300" title="{{ 'ACTIONS.VIEW' | translate }}"
+            (click)="openTimelinePopup(req)">
+            <i class="fas fa-eye text-lg"></i>
+          </button>
+
+          <!-- Rejected -->
+          <button *ngIf="req.status === 'Rejected'"
+            class="p-2 text-gray-600 hover:text-red-700 rounded-md transition duration-300" title="{{ 'ACTIONS.VIEW' | translate }}"
+            (click)="openTimelinePopup(req)">
+            <i class="fas fa-eye text-lg"></i>
+          </button>
+
+          <!-- Pending -->
+          <!--
+          <button *ngIf="req.status === 'Pending'"
+            class="min-w-[140px] flex-shrink-0 w-full sm:w-auto px-5 py-2 bg-yellow-500 hover:bg-green-700 text-white rounded-md font-semibold flex items-center justify-center space-x-2 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+            title="View" (click)="openTimelinePopup(req)">
+            <i class="fas fa-eye"></i>
+            <span class="hidden sm:inline">View</span>
+          </button>
+          -->
+          <button *ngIf="req.status === 'Pending'"
+            class="p-2 text-gray-600 hover:text-green-700 rounded-md transition duration-300 flex items-center justify-center"
+            title="{{ 'ACTIONS.VIEW' | translate }}" (click)="openTimelinePopup(req)" aria-label="View">
+            <i class="fas fa-eye text-lg"></i>
+          </button>
+
+          <!-- Draft -->
+          <button *ngIf="req.status === 'Draft'"
+            class="w-12 sm:min-w-[140px] flex-shrink-0 px-3 py-2 bg-blue-600 hover:bg-green-700 text-white rounded-md font-semibold flex items-center justify-center space-x-0 sm:space-x-2 transition-all duration-300 ease-in-out transform hover:shadow-lg hover:scale-105"
+            title="{{ 'ACTIONS.EDIT' | translate }}" (click)="editDocument(req.requestId)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.232 5.232l3.536 3.536M9 11l6 6m-6-6L5 21h6l6-6" />
+            </svg>
+            <span class="hidden sm:inline">{{ 'ACTIONS.EDIT' | translate }}</span>
+          </button>
+
+          <!-- Timeline modal -->
+          <app-timeline-modal *ngIf="showTimelineModal" [request]="selectedRequest" (closeModal)="closeTimelinePopup()">
+          </app-timeline-modal>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Pagination -->
+  <div class="flex justify-between items-center mt-4 flex-wrap gap-2">
+    <div class="text-sm text-gray-700 dark:text-gray-300">
+      {{ 'ACTIONS.PAGE_INFO' | translate: { currentPage: currentPage, totalPages: totalPages } }}
+    </div>
+    <div class="flex space-x-2">
+      <button (click)="previousPage()" [disabled]="currentPage === 1"
+        class="px-3 py-1 border rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 disabled:opacity-50">
+        {{ 'ACTIONS.PREVIOUS' | translate }}
+      </button>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages"
+        class="px-3 py-1 border rounded-md bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-200 disabled:opacity-50">
+        {{ 'ACTIONS.NEXT' | translate }}
+      </button>
+    </div>
+  </div>
+</ng-template>

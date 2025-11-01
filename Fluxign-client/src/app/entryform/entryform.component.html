@@ -1,0 +1,90 @@
+<div class="page-container">
+  <form #myForm="ngForm" (ngSubmit)="submit()" class="form-container">
+    <h2>Please fill the details and upload document for sign.</h2>
+  
+    <!-- Full Name -->
+    <div class="form-group">
+      <div *ngIf="isLoading" class="overlay-loader">
+        <div class="spinner"></div>
+      </div>
+      <label for="fullName">Full Name:</label>
+      <input
+        id="fullName"
+        type="text"
+        name="fullName"
+        [(ngModel)]="fullName"
+        #fullNameModel="ngModel"
+        required
+      />
+      <div *ngIf="fullNameModel.invalid && (submitted || fullNameModel.touched)" class="error">
+        <div *ngIf="fullNameModel.errors?.['required']">Full Name is required.</div>
+      </div>
+    </div>
+  
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        #emailModel="ngModel"
+        required
+        email
+      />
+      <div *ngIf="emailModel.invalid && (submitted || emailModel.touched)" class="error">
+        <div *ngIf="emailModel.errors?.['required']">Email is required.</div>
+        <div *ngIf="emailModel.errors?.['email']">Invalid email format.</div>
+      </div>
+    </div>
+  
+    <!-- Phone -->
+    <div class="form-group phone-input-wrapper">
+      <label for="phone">Phone Number:</label>
+      <div class="phone-input-inner">
+        <input
+          type="tel"
+          value="+971"
+          disabled
+          class="phone-prefix"
+          tabindex="-1"
+        />
+        <input
+          id="phone"
+          type="number"
+          name="phone"
+          [(ngModel)]="phone"
+          #phoneModel="ngModel"
+          required
+          pattern="^[0-9]{9}$"
+          placeholder="Enter 9 digit number"
+        />
+      </div>
+    
+      <div *ngIf="phoneModel.invalid && (submitted || phoneModel.touched)" class="error">
+        <div *ngIf="phoneModel.errors?.['required']">Phone number is required.</div>
+        <div *ngIf="phoneModel.errors?.['pattern']">Phone number must be 9 digits.</div>
+      </div>
+    </div>
+    
+  
+    <!-- File Upload -->
+    <div class="form-group">
+      <label for="file">Upload File:</label>
+      <input
+        id="file"
+        type="file"
+        (change)="onFileSelected($event)"
+        required
+      />
+      <div *ngIf="fileError && !selectedFile" class="error">{{ fileError }}</div>
+    </div>
+  
+    <!-- Submit Button -->
+    <button class="upload-button" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
+  

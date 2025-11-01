@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SignatureService.Api.props" />
+</Project>

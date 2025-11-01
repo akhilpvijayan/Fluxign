@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UvcFE0e8FEH0cKgOoV9Vow9c332JWbRHGeiFoXkvrqc=",
+  "Source": "DocumentService.Api",
+  "BasePath": "_content/DocumentService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

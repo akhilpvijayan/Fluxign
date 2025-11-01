@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "6aQolmp0zJE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\SignatureService\\SignatureService.Infrastructure\\SignatureService.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\akhil.p\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

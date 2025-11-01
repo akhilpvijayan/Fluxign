@@ -1,0 +1,79 @@
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-20 px-4">
+  <div class="bg-white dark:bg-[#1f1f1f] w-full max-w-2xl rounded-lg shadow-lg overflow-y-auto max-h-[90vh] relative">
+    <button (click)="close()"
+      class="absolute top-3 right-3 text-gray-500 hover:text-red-500 dark:text-gray-300 dark:hover:text-red-400 text-xl font-bold focus:outline-none">
+      &times;
+    </button>
+
+    <!-- Modal Content -->
+    <ng-container *ngIf="request">
+      <!-- Timeline Modal -->
+      <div class="p-6">
+        <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-white">
+          {{ 'TIMELINE_MODAL.TITLE' | translate:{ title: request?.title } }}
+        </h2>
+
+        <div class="relative border-l-2 border-green-400 ml-6 pl-4">
+          <div *ngFor="let signer of request?.recipients | orderBy: 'order'" class="mb-10 relative">
+            <div class="absolute w-4 h-4 rounded-full -left-[26px] top-1.5" [ngClass]="{
+                'bg-green-500': signer.signed,
+                'bg-red-500': signer.rejected,
+                'bg-gray-400': !signer.signed && !signer.rejected
+              }"></div>
+
+            <div class="flex items-center gap-4">
+              <img [src]="signer.avatarUrl" [alt]="signer.name"
+                class="w-10 h-10 rounded-full border-2 border-gray-300 dark:border-gray-600 object-cover" />
+
+              <div>
+                <p class="text-lg font-semibold text-gray-900 dark:text-white">{{ signer.name }}</p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 flex items-center gap-1">
+                  {{ 'TIMELINE_MODAL.STATUS' | translate }}
+                  <span
+                    class="flex items-center gap-1"
+                    [ngClass]="{
+                      'text-green-600': signer.signed,
+                      'text-red-500': signer.rejected,
+                      'text-yellow-500': !signer.signed && !signer.rejected
+                    }"
+                  >
+                    <ng-container *ngIf="signer.signed">
+                      <!-- Signed Icon SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                      {{ 'TIMELINE_MODAL.SIGNED' | translate }}
+                    </ng-container>
+
+                    <ng-container *ngIf="signer.rejected">
+                      <!-- Rejected Icon SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      {{ 'TIMELINE_MODAL.REJECTED' | translate }}
+                    </ng-container>
+
+                    <ng-container *ngIf="!signer.signed && !signer.rejected">
+                      <!-- Pending Icon SVG -->
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-spin inline-block" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                      </svg>
+                      {{ 'TIMELINE_MODAL.PENDING' | translate }}
+                    </ng-container>
+                  </span>
+                </p>
+                <p class="text-xs text-gray-400 mt-1">
+                  {{ 'TIMELINE_MODAL.TIMESTAMP' | translate:{ timestamp: signer.timestamp || '—' } }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

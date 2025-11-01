@@ -1,0 +1,70 @@
+<div *ngIf="toast"
+  class="fixed bottom-4 right-4 w-[90%] max-w-sm z-50 transition-all duration-500 ease-in-out transform sm:bottom-6 sm:right-6"
+  [ngClass]="{
+    'opacity-100 translate-y-0 scale-100': visible,
+    'opacity-0 translate-y-6 scale-95': !visible
+  }"
+>
+  <div
+    class="flex items-start p-4 sm:p-5 rounded-xl shadow-xl backdrop-blur-md bg-white/10 border-2
+           dark:bg-gray-900/70 dark:backdrop-blur-lg"
+    [ngClass]="bgGlassColor(toast.type)"
+  >
+    <div class="w-8 h-8 mr-3 shrink-0">
+      <ng-container [ngSwitch]="toast.type">
+
+        <!-- ✅ Success Icon -->
+        <svg *ngSwitchCase="'success'" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="#22C55E" stroke-width="2" fill="none" />
+          <path d="M10 18L16 24L26 12" stroke="#22C55E" stroke-width="3" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <animate attributeName="stroke-dasharray" from="0,30" to="30,0" dur="0.6s" fill="freeze" />
+          </path>
+        </svg>
+
+        <!-- ❌ Error Icon -->
+        <svg *ngSwitchCase="'error'" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="#EF4444" stroke-width="2" fill="none">
+            <animate attributeName="r" values="17;19;17" dur="0.6s" repeatCount="indefinite" />
+          </circle>
+          <path d="M12 12L24 24M24 12L12 24" stroke="#EF4444" stroke-width="3" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18"
+              dur="1.5s" repeatCount="indefinite" />
+          </path>
+        </svg>
+
+        <!-- ⚠️ Warning Icon -->
+        <svg *ngSwitchCase="'warning'" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="18,4 34,32 2,32" fill="#FACC15">
+            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="0.8s"
+              repeatCount="indefinite" />
+          </polygon>
+          <text x="18" y="26" text-anchor="middle" font-size="20" fill="white" font-weight="bold">!</text>
+        </svg>
+
+        <!-- ℹ️ Info Icon -->
+        <svg *ngSwitchCase="'info'" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="16" fill="#3B82F6">
+            <animate attributeName="r" values="16;18;16" dur="1.5s" repeatCount="indefinite" />
+          </circle>
+          <text x="18" y="24" text-anchor="middle" font-size="20" fill="white" font-weight="bold">i</text>
+        </svg>
+
+      </ng-container>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1">
+      <div class="font-semibold text-sm sm:text-base text-gray-900 dark:text-gray-100">{{ toast.title }}</div>
+      <div class="text-xs sm:text-sm opacity-80 mt-1 text-gray-700 dark:text-gray-300">{{ toast.message }}</div>
+    </div>
+
+    <!-- Close -->
+    <button (click)="close()"
+      class="text-gray-900 dark:text-gray-100 text-lg font-bold ml-2 sm:ml-4 hover:text-red-600 dark:hover:text-red-400 transition duration-200"
+      aria-label="Close"
+    >
+      ×
+    </button>
+  </div>
+</div>

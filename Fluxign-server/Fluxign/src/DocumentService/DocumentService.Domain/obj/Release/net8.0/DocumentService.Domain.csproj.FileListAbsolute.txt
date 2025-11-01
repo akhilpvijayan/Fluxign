@@ -1,0 +1,11 @@
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\bin\Release\net8.0\DocumentService.Domain.deps.json
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\bin\Release\net8.0\DocumentService.Domain.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\bin\Release\net8.0\DocumentService.Domain.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.AssemblyInfoInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.AssemblyInfo.cs
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\refint\DocumentService.Domain.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\DocumentService.Domain.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Domain\obj\Release\net8.0\ref\DocumentService.Domain.dll

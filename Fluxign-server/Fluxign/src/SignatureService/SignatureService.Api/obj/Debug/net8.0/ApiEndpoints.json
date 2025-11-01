@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "SignatureService.Api.Controllers.SignatureController",
+    "Method": "VerifyUser",
+    "RelativePath": "api/Signature/VerifyUser/{token}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "state",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

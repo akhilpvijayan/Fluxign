@@ -1,0 +1,243 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj",
+        "projectName": "NotificationService.Application",
+        "projectPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj",
+        "packagesPath": "C:\\Users\\akhil.p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akhil.p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj": {
+                "projectPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj",
+        "projectName": "NotificationService.Domain",
+        "projectPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\NotificationService.Domain.csproj",
+        "packagesPath": "C:\\Users\\akhil.p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Domain\\NotificationService.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akhil.p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj",
+        "projectName": "NotificationService.Infrastructure",
+        "projectPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\NotificationService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\akhil.p\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Infrastructure\\NotificationService.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akhil.p\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj": {
+                "projectPath": "C:\\Users\\akhil.p\\source\\Done.ae\\E-Kyc\\Done.ae\\src\\NotificationService\\NotificationService.Application\\NotificationService.Application\\NotificationService.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

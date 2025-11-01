@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "/8rNklrbf4kSrmMlwmlwSEHxTL009T2ssHaOlDsA29g=",
+  "Source": "SignatureService.Api",
+  "BasePath": "_content/SignatureService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

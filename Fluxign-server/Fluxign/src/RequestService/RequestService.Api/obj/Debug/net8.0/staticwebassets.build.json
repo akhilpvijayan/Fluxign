@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9GgE5jYeNYMqxusG85fFNLuGaBy3iK5WDhAfJnIVaa4=",
+  "Source": "RequestService.Api",
+  "BasePath": "_content/RequestService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

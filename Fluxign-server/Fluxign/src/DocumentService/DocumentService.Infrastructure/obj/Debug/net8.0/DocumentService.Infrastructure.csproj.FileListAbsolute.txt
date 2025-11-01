@@ -1,0 +1,17 @@
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Infrastructure.deps.json
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Infrastructure.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.AssemblyInfo.cs
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\refint\DocumentService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\ref\DocumentService.Infrastructure.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\DocumentService.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Application.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Domain.dll
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Application.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\bin\Debug\net8.0\DocumentService.Domain.pdb
+C:\Users\akhil.p\source\Done.ae\E-Kyc\Done.ae\src\DocumentService\DocumentService.Infrastructure\obj\Debug\net8.0\Document.C3081AC9.Up2Date

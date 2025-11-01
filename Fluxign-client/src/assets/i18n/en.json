@@ -1,0 +1,205 @@
+{
+    "SETTINGS": {
+        "GENERAL": "General",
+        "APPEARANCE": "Appearance",
+        "LANGUAGE": "Language",
+        "DARK_MODE": "Dark Mode",
+        "SELECT_LANGUAGE": "Select Language",
+        "GENERAL_CONTENT": "General settings content here.",
+        "TITLE": "{{section}} Settings"
+    },
+    "PROFILE_MENU": {
+        "ARIA_LABEL": "Profile menu",
+        "MY_PROFILE": "My Profile",
+        "LOGOUT": "Logout",
+        "CONFIRM_LOGOUT_TITLE": "Confirm Logout",
+        "CONFIRM_LOGOUT_TEXT": "Are you sure you want to logout?",
+        "CANCEL": "Cancel",
+        "LOGOUT_BUTTON": "Logout"
+    },
+    "TABS": {
+        "DOCUMENTS": "Documents",
+        "SETTINGS": "Settings"
+    },
+    "UPLOAD_BUTTON": {
+        "LABEL": "Upload Document"
+    },
+    "SEARCH": {
+        "PLACEHOLDER": "Search documents..."
+    },
+    "STATUS_TABS": {
+        "ALL": "All",
+        "COMPLETED": "Completed",
+        "PENDING": "Pending",
+        "DRAFT": "Draft"
+    },
+    "TABLE_HEADERS": {
+        "CREATED_AT": "Created At",
+        "TITLE": "Title",
+        "RECIPIENTS": "Recipients",
+        "STATUS": "Status",
+        "ACTIONS": "Actions"
+    },
+    "RECIPIENT_STATUS": {
+        "SIGNED": "✔ Signed",
+        "REJECTED": "✖ Rejected",
+        "PENDING": "Pending"
+    },
+    "REQUEST_STATUS": {
+        "DRAFT": "Draft",
+        "COMPLETED": "Completed",
+        "PENDING": "Pending"
+    },
+    "ACTIONS": {
+        "DOWNLOAD": "Download",
+        "VIEW": "View",
+        "EDIT": "Edit",
+        "PAGE_INFO": "Page {{currentPage}} of {{totalPages}}",
+        "PREVIOUS": "Previous",
+        "NEXT": "Next"
+    },
+    "TIMELINE_MODAL": {
+        "TITLE": "Signing Timeline — {{title}}",
+        "STATUS": "Status:",
+        "SIGNED": "Signed",
+        "REJECTED": "Rejected",
+        "PENDING": "Pending",
+        "TIMESTAMP": "Timestamp: {{timestamp}}"
+    },
+    "PDF_VIEWER": {
+        "LOADING": "Loading PDF..."
+    },
+    "NAVIGATION": {
+        "BACK_TO_DASHBOARD": "Back to Dashboard",
+        "DASHBOARD": "Dashboard"
+    },
+    "REQUEST_FORM": {
+        "TITLE": "Request Form",
+        "FORM": {
+            "TITLE_LABEL": "Title",
+            "TITLE_PLACEHOLDER": "Enter document title",
+            "TITLE_REQUIRED": "Title is required",
+            "SIGNERS": {
+                "UNNAMED": "Unnamed Signer",
+                "NAME_PLACEHOLDER": "Name",
+                "NAME_REQUIRED": "Name is required",
+                "EMAIL_PLACEHOLDER": "Email",
+                "EMAIL_REQUIRED": "Valid email is required",
+                "MOBILE_PLACEHOLDER": "Mobile (+1234567890)",
+                "MOBILE_REQUIRED": "Valid mobile number is required (9 digits)",
+                "DELETE_SIGNER": "Delete signer",
+                "DRAG_TO_REORDER": "Drag to reorder",
+                "ADD_SIGNER": "Add Signer"
+            },
+            "REVIEW": {
+                "TITLE": "Review Signers & Signature Position",
+                "NO_POSITION": "No signature position selected.",
+                "SIGNATURE_AT": "Signature at Page {{page}}, X: {{x}}, Y: {{y}}"
+            },
+            "STEPS": {
+                "STEP_1": "Step 1 of 2",
+                "STEP_2": "Step 2 of 2"
+            },
+            "BUTTONS": {
+                "CANCEL": "Cancel",
+                "FINISH_LATER": "Finish Later",
+                "NEXT": "Next",
+                "BACK": "Back",
+                "SEND": "Send"
+            }
+        }
+    },
+    "PROFILE_PAGE": {
+        "BACK_TO_DASHBOARD": "Back to Dashboard",
+        "DASHBOARD": "Dashboard",
+        "TITLE": "My Profile",
+        "AVATAR_ALT": "User Avatar",
+        "AVATAR_EDIT_ARIA": "Edit avatar",
+        "NAME_EDIT_ARIA": "Edit name",
+        "EMAIL_LABEL": "Email",
+        "EMAIL_VERIFIED": "Verified",
+        "EMAIL_NOT_VERIFIED": "Not Verified",
+        "EMAIL_EDIT_ARIA": "Edit email",
+        "MOBILE_LABEL": "Mobile",
+        "MOBILE_EDIT_ARIA": "Edit mobile",
+        "EMIRATES_ID_LABEL": "Emirates ID",
+        "EMIRATES_ID_EDIT_ARIA": "Edit Emirates ID",
+        "MEMBER_SINCE_LABEL": "Member Since",
+        "NAME_PLACEHOLDER": "Enter your name",
+        "VERIFY_BUTTON": "Verify",
+        "CONFIRM_PASSWORD_TITLE": "Please confirm your password",
+        "PASSWORD_PLACEHOLDER": "Enter your password",
+        "WRONG_PASSWORD": "Incorrect password",
+        "EMIRATES_ID_LABEL": "Emirates ID",
+        "EMIRATES_ID_EDIT_ARIA": "Edit Emirates ID",
+        "ENTER_OTP_TITLE": "Enter the 6-digit code sent to your email",
+        "RESEND_IN": "Resend available in",
+        "RESEND_OTP": "Resend OTP",
+        "EDIT_EMIRATES_ID_TITLE": "Edit Emirates ID",
+        "OLD_EMIRATES_ID": "Old Emirates ID",
+        "NEW_EMIRATES_ID": "New Emirates ID",
+        "EMIRATES_ID_LABEL": "Emirates ID",
+        "VIEW_EMIRATES_ID_ARIA": "View Emirates ID",
+        "EMIRATES_ID_EDIT_ARIA": "Edit Emirates ID",
+        "PHONE_ERROR": "Phone number is required",
+        "REQUEST_FORM": {
+            "FORM": {
+                "SIGNERS": {
+                    "EMIRATES_ID_REQUIRED": "Emirates ID is required",
+                    "EMIRATES_ID_INVALID": "Emirates ID must be exactly 15 digits"
+                }
+            }
+        }
+    },
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "VERIFY": "Verify",
+    "CONFIRM": "Confirm",
+    "SIGN_IN_TITLE": "Sign in to your account",
+    "WELCOME_BACK": "Welcome back, we are lucky to have you.",
+    "EMAIL_LABEL": "Email address",
+    "EMAIL_INVALID": "Please enter a valid email.",
+    "EMAIL_REQUIRED": "Email is required.",
+    "PASSWORD_LABEL": "Password",
+    "PASSWORD_REQUIRED": "Password is required.",
+    "REMEMBER_ME": "Remember me",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "SIGN_IN_BUTTON": "Sign In",
+    "NO_ACCOUNT": "Don't have an account?",
+    "SIGN_UP": "Sign up",
+    "CREATE_ACCOUNT_TITLE": "Create your account",
+    "CREATE_ACCOUNT_SUBTITLE": "Start signing documents securely and instantly.",
+    "FIRST_NAME_LABEL": "First Name",
+    "FIRST_NAME_PLACEHOLDER": "Enter First Name",
+    "LAST_NAME_LABEL": "Last Name",
+    "LAST_NAME_PLACEHOLDER": "Enter Last Name",
+    "FIRST_NAME_ERROR": "First name is required.",
+    "LAST_NAME_ERROR": "Last name is required.",
+    "EMAIL_LABEL": "Email",
+    "EMAIL_PLACEHOLDER": "email@example.com",
+    "EMAIL_ERROR": "Enter a valid email.",
+    "PHONE_LABEL": "Phone Number",
+    "PHONE_ERROR": "Phone number is required.",
+    "EMIRATES_ID_LABEL": "Emirates ID",
+    "EMIRATES_ID_PLACEHOLDER": "784-1987-1234567-1",
+    "EMIRATES_ID_ERROR": "Please enter a valid Emirates ID.",
+    "PASSWORD_LABEL": "Password",
+    "PASSWORD_PLACEHOLDER": "••••••••",
+    "PASSWORD_ERROR": "Password must be at least 8 characters.",
+    "CREATE_ACCOUNT_BUTTON": "Create Account",
+    "ALREADY_HAVE_ACCOUNT": "Already have an account?",
+    "SIGN_IN_LINK": "Sign in",
+    "CONFIRM_PASSWORD_LABEL": "Confirm Password",
+    "CONFIRM_PASSWORD_PLACEHOLDER": "Re-enter your password",
+    "CONFIRM_PASSWORD_ERROR": "Please confirm your password",
+    "PASSWORD_MISMATCH_ERROR": "Passwords do not match",
+    "NAVIGATION_CONFIRM": {
+        "UNSAVED_CHANGES_CONFIRM": "Are you sure you want to leave? All unsaved changes will be lost.",
+        "YES": "Yes",
+        "CANCEL": "Cancel"
+    },
+    "DASHBOARD": {
+        "EMAIL_NOT_VERIFIED_WARNING": "Your email address is not verified. Please verify to access all features.",
+        "VERIFY_NOW": "Verify Now"
+    }
+}

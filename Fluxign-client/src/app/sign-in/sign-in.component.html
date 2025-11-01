@@ -1,0 +1,56 @@
+<div *ngIf="isLoading" class="overlay-loader">
+  <div class="spinner"></div>
+</div>
+<div class="page-wrapper">
+  <div class="container">
+    <div class="pdf-wrapper">
+      <button class="download-btn" (click)="downloadPdf()" aria-label="Download PDF">
+        <span class="tooltip-text">Download PDF</span>
+        <i class="fas fa-download"></i>
+      </button>
+      
+      <div class="pdf">
+        <div #pdfContainer class="pdf-viewer"></div>
+      </div>
+      <div class="powered-by">
+        <p *ngIf="!isLoading">Powered by done.ae</p>
+      </div>
+    </div>
+
+    <!-- <div class="button-wrapper">
+      <div class="consent-container">
+        <h1 class="consent-title">Consent for UAE Pass Authentication and Digital Signature</h1>
+        To proceed with your digital identity verification, we require your consent to access your UAE Pass information
+        and allow digital signing of the document.
+      </div>
+      <button class="uae-pass-button" (click)="submit()">
+        <img src="assets/images/ic_fingerprint.png" alt="Fingerprint" />
+        <span>Sign with UAE Pass</span>
+      </button>
+    </div> -->
+    <div class="button-wrapper">
+      <div class="uae-pass-wrapper">
+        <button class="uae-pass-button" (click)="togglePopup()">
+          <img src="assets/images/ic_fingerprint.png" alt="Fingerprint" />
+          <span>Sign with UAE Pass</span>
+          <!-- <i class="arrow-icon" [ngClass]="{ 'down': showPopup, 'up': !showPopup }"></i> -->
+        </button>
+      
+        <div *ngIf="showPopup" class="uae-popup">
+          <div class="popup-content">
+            <h1 class="consent-title">Consent for UAE Pass Authentication and Digital Signature</h1>
+            To proceed with your digital identity verification, we require your consent to access your UAE Pass information
+              and allow digital signing of the document.
+              <hr>
+            <div class="popup-actions">
+              <button class="cancel-btn" (click)="togglePopup()">Cancel</button>
+              <button class="accept-btn" (click)="submit()">Accept</button>
+            </div>
+          </div>
+          <div class="popup-arrow-down"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

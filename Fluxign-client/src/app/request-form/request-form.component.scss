@@ -1,0 +1,20 @@
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  
+    /* ✅ Add padding where needed */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  
+    /* Optional for clarity */
+    background-color: #f9f9f9;
+  
+    /* Prevent accidental horizontal overflow */
+    box-sizing: content-box;
+  }
+  

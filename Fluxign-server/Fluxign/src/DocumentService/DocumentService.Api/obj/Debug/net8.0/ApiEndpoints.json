@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "DocumentService.Api.Controllers.DocumentController",
+    "Method": "AddDocument",
+    "RelativePath": "api/Document/add-document",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "document",
+        "Type": "DocumentService.Application.ViewModels.AddDocument",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DocumentService.Api.Controllers.DocumentController",
+    "Method": "GetOriginalDocumentByRecipientToken",
+    "RelativePath": "api/Document/original-document/token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DocumentService.Api.Controllers.DocumentController",
+    "Method": "GetDocumentByRequestId",
+    "RelativePath": "api/Document/requestId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
